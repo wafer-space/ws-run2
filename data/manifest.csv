@@ -1,0 +1,69 @@
+0000,ICELab Test Chip,1x0p5,chip_top,f52343dd6e84186e533604ab47f826f42947ab033246037d7341224896830878,0000/chip_top.oas,Public,"In this project, we include various floating-gate and non-floating gate standard cells for characterization. 
+These include: 
+3 Various charge pumps,
+4x2 array of indirectly programmed floating gates,
+2 transconductance amplifiers,
+1 floating gate characterization cell,
+NFET & PFET characterization cells",https://github.com/GTIceLab/ASHES-GF180nm
+AMM1,raybox-zero wafer.space run 2 half height,1x0p5,chip_top,9fd12a480a5a546316cd773c73d38bf3dab0793bb342bcfeea1900322d284390,AMM1/chip_top.oas,Public,"LibreLane digital project implementing Anton Maurovic's (algofoogle's) raybox-zero ""3D"" ray caster demo with SPI interface for ""game like"" control by a host PC or MCU, optional texture-map QSPI ROM interface, and Tiny VGA compatible digital RGB222 VGA output.",https://github.com/algofoogle/gf180ws2-raybox-zero
+AS04,AS04 Multi-Project die using 3.3V SCL,1x1,chip_top,3601f75953aab1b4d93dd772bf08884288c2d5a4be77bb4c48d4bf1fdc12e29e,AS04/chip_top.oas,Public,"Contains:
+- 6502/6510/PLA replicas
+- SID replicas
+- rv32ima_zicsr_smnmi core
+- Retro DRAM controller
+- GPIO chip
+- NTSC Test signal generator
+- FM Synth
+- Digital-to-Analog converters
+- Two layouts generated using [FeatherLane](https://codeberg.org/TholinVali/FeatherLane)",https://github.com/AvalonSemiconductors/ws-submission-2026/
+AS16,AS16 CPU,1x0p5,chip_top,33a51ba1b2b71d98cd2cbce75cd175785286e4ce0b6dc879cdee6097f04dc87c,AS16/chip_top.oas,Public,"A 16-bit RISC CPU designed by a Y10 student in Sydney Technical High School. (""my first ever tapeout"")",http://github.com/SUD0NET/as16
+BTX1,BTX,1x1,chip_top,3e931e0d0dd561d9f03c93f55e4569af7c24a2ef58ad529d0a9bad68b6d6e4e0,BTX1/chip_top.oas,Public,Path-tracing accelerator chip,
+CAB1,Cabrera CoB,1x0p5,chip_top,460b282397547267aa506faf6412606701b345035b3da17b319bb20dd03dcd3f,CAB1/chip_top.oas,Public,,https://github.com/ZeduloTech/Cabrera
+CAFE,Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version,0p5x0p5,chip_top,ad79e563dbae4aa31f51885d41fd0500bd2a635538c428eb3529aa88416b4d86,CAFE/chip_top.oas,Public,"This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. 
+
+
+Both designs have been validated on an FPGA. 
+
+This is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.",https://github.com/Essenceia/Expresso_ASIC_Chip
+CLON,Cloneless2,1x1,chip_top,2da360b642e4d12e66b8192ebf8c352b862adbf15e5d9f07b0c767337637b9e3,CLON/chip_top.oas,Public,Cloneless2 is the second tapeout in the Cloneless series of tamper-resistant open-source ASICs.,https://github.com/ThorbenMoos/Cloneless2
+DCO0,Standard Cell DCO+TDC,1x0p5,chip_top,1e4c9dc80cc2654fb05401c688a7705944aa0ab0614b1f8ea93ff101a5f83be8,DCO0/chip_top.oas,Public,A tiny Digital Controlled Oscillator + Time-to-Digital Converter comprised entirely in gf180 standard cells,https://github.com/asinghani/ws-dco-tdc
+DPK1,bio180,0p5x1,chip_top,c72c96af396a8b064d44aac847653ed1db127b163275ab539d66e591b8b09c2d,DPK1/chip_top.oas,Public,Dual Core BIO: The Bao I/O Co-processor from baochip-1x with 4Kb of SRAM on gf180 with SPI host.,https://github.com/dpks2003/bio-core
+DPK2,cordic-romless-x8,0p5x0p5,chip_top,cb0ae7f6006b7527866a82eb317ce5ff258bfbb24b3e5a7e11e1a2d8690b7817,DPK2/chip_top.oas,Public,"8 ROM-less CORDIC engines , each with its owe SPI-slave interface.  Each core implements a  CORDIC which work on a 16-bit signed fixed-point input Q3.16 (1 sign bit, 3 integer bits, and 12 fraction bits). This engine utilizes SPI-slave interface to receive four 16-bit signed fixed-point inputs (atan₀, alpha, x, y) and returns three 16-bit signed fixed-point outputs (alpha, cosθ, sinθ).  With the arctan micro-rotation angles generated on the fly by Taylor-series approximation , no coefficient ROM required.
+
+AFASIK :  Its the only ROM-Less Implementation for CORDIC Algorithm",https://github.com/dpks2003/cordic-romless
+EURO,EuroSynth,1x0p5,chip_top,2e0ca16366580a2513c158cb5e7c41d12c16734575deef3f73d085b5b52e0b7c,EURO/chip_top.oas,Public,A kitchen-sink synthesizer voice in custom silicon — a fully digital eurorack synth voice taped out on the open-source GlobalFoundries 180 nm (GF180MCU) PDK with the LibreLane RTL-to-GDSII flow.,https://github.com/anfroholic/eurosynth
+FC01,Flip Chip pad test version 1,0p5x0p5,TOP,c86059407e89f9fcb4137a675fea252d3a97a222b6d438960018e57723909cfb,FC01/TOP.oas,Public,Just some test pads for flip chip bonding trials,
+FS01,Test chip with 3.3V SRAM blocks using regular design rules,0p5x1,chip_top,9ee645dd97da642648e8f30741a1bb4fb014dc59d2f506672090505cfdade38e,FS01/chip_top.oas,Public,,https://gitlab.com/Chips4Makers/arrakeen-sram-testchip
+FS02,Test chip with 3.3V SRAM blocks using SRAM design rules,0p5x1,chip_top,a62348078ac96641c039f5d07e0df17426d4dd4b7a8673f655516a57131cf220,FS02/chip_top.oas,Public,,https://gitlab.com/Chips4Makers/arrakeen-sram-testchip
+FS03,Test chip with 5V SRAM blocks,0p5x1,chip_top,a7c6de35936dc60a4421b19d24b6c6f15274b03d7f30508ea9e19683d64b6d9d,FS03/chip_top.oas,Public,,https://gitlab.com/Chips4Makers/arrakeen-sram-testchip
+GD04,Racquet Wide 1x0.5,1x0p5,chip_top,3fa8774ab2004a50c5778f76bfc98010231bee17ec938de6f81c6006bcab28c6,GD04/chip_top.oas,Public,"A Configuration of racquet, a multicore Serv based SoC
+ - 9t 5v0 standard cells
+ - Difetto to incorporate DFT scan chain into design
+ - 6 cores",https://github.com/gregdavill/gf180mcu-racquet-1x0.5
+HZ80,FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot),0p5x1,chip_top,95ae5a1998b7e18c28819513726907e2d0e339ca14aad72050f87b343f49cdca,HZ80/chip_top.oas,Public,"Silicon proven, pin compatible, open-source replacement for Zilog Z80 a classic 8-bit CPU.
+https://github.com/rejunity/z80-open-silicon",https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu
+ISHI,ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2,0p5x1,ISHI-KAI_WS_RUN2,fe636badbff6d2b0bb0063b8925a81f8f4eac965b1cba9d4452a1dc32389f933,ISHI/ISHI-KAI_WS_RUN2.oas,Public,ISHI-KAI's Multiple Projects Wafer for Wafer.Sapce GF180 Run 2.,https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2
+KIAN,KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2,1x1,chip_top,7fdd74f933b1b903ba323367cce6c640d3d1412c527c348d1a6cad1c8558e2e6,KIAN/chip_top.oas,Public,"KianV SV32 MMU RV32IMA + Zicntr/Zicsr/Zifencei/Sstc Linux/Xv6 SoC, v3.3 standard cells",https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32-ws02/
+MEME,Artwork Meme Chip,1x0p5,chip_top,01cef474958a4d1ad2987dbaf673d2d128b48d406808ea8b2aaeb04cf80ac5af,MEME/chip_top.oas,Public,Meme chip for marketing and swag,https://github.com/anfroholic/meme_chip
+MOLE,FABulous FPGA,1x1,chip_top,f1845bac051520d0a34f5835012ff03d3b484a30d7c741a7a77b42298424c7b1,MOLE/chip_top.oas,Public,"This is an improved version of my FABulous FPGA on wafer.space run 1. Notably, it uses 3.3V standard cells and SRAM macros, as well as 3.3V/5V compatible I/O cells.",https://github.com/mole99/wsrun2-fabulous-fpga
+NAX1,Naxos CoB,1x0p5,chip_top,87cbe92fe0c04989ca61483353f0acb86ae440e4f37ae9867e36ff453440de4e,NAX1/chip_top.oas,Public,,https://github.com/ZeduloTech/Naxos
+OCD3,3.3V SRAM test 2,1x0p5,gf180mcu_ocd_sram2_top,ade917d96d21487183fe9ab5bac473eb5b4fb32b1c6238f773b9d9714d46a360,OCD3/gf180mcu_ocd_sram2_top.oas,Public,"A variant of the 3.3V SRAM test chip submitted for the first shuttle run.
+This one has the new 64 byte SRAM block on it, which was designed to (maybe) fit in a single Tiny Tapeout tile.
+It also has a new design of a 3.3V power-on-reset (PoR) block.",https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test
+PSOC,Simplest possible PicoSoC implementation using wafer.space flow,1x0p5,chip_top,8ef2d8455ba79b5c042ccedbf5eadb8ab18b3d8261b7b811a988088a7fdb010b,PSOC/chip_top.oas,Public,"Established as a FOSS flow proof of concept for SoC design. Eventually we hope to add wishbone bus and peripherals, open-drain IO for I2C and I2C controller, bandgap reference and voltage regulators, etc.",https://github.com/d-burnett/picosoc-on-waferspace
+QZ80,FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot),0p5x0p5,chip_top,ca887616acb0dfda22a586debfcb2868feed6694b1af31b672f7c5533fde870d,QZ80/chip_top.oas,Public,"Silicon proven, pin compatible, open-source replacement for Zilog Z80 a classic 8-bit CPU.
+https://github.com/rejunity/z80-open-silicon",https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu
+RLCM,RLCM: Test Passives For GF180MCUD,0p5x1,RLCMV4_filled,aec9076cbcd44f78f9e4d5ecbbfff4dcdd5f5e95a395db350faa8ee287ded6f2,RLCM/RLCMV4_filled.oas,Public,This TO aims to have a kind of test passives to verify the automated openEMS flow used to simulate passives on GF180MCUD.,https://github.com/EngGhaith/RLCM-Test-Passives-For-GF180MCUD
+SALU,Simple ALU,0p5x0p5,chip_top,95774f2b7586e446b69d0146fb0d01664894462d9c04e75be54e31e63973f477,SALU/chip_top.oas,Public,A simple ALU design written in Scala through Chisel,https://github.com/StackDoubleFlow/alu_silicon
+SCML,ML-Audio SC,1x1,chip_top,148896f2a79728e5be6a49e0173966e98860c15f30c5c93a8b861a465c96b08f,SCML/chip_top.oas,Public,"Always on, low-power, general-purpose, keyword-spotting ASIC",https://github.com/kjconway5/ML-Audio
+SCMT,microTheia,1x1,chip_top,d4739ad663893efa43ddf57b7c2a53d4bbbf8fd6be475fd81254444335273aa3,SCMT/chip_top.oas,Public,Programmable event-based machine-vision system. Compatible with EVT2 encoded event stream delivered via SPI type-0 dedicated pins.,https://github.com/dhgaddy/microTheia
+SCTP,SlugTPU,1x1,chip_top,8577fe86c530b3ee5cf116278ff60e4333b2bfc3fa4aac713479b54f567b3ca0,SCTP/chip_top.oas,Public,,https://github.com/SlugTPU/gf180mcu-slugtpu
+SCUP,GF180MCU Peripherals,1x1,chip_top,5d7c4c3e5b7af46319e09411faa69757efdcea7b52653e0d8e102a7489d35d03,SCUP/chip_top.oas,Public,"This open-source chip demonstrates an RMII Ethernet MAC, an SDcard reader, an SDRAM controller, and several different configurations of PLLs.",https://github.com/sifferman/gf180mcu-peripherals
+T0P3,Tiny Tapeout GF 0p3,1x1,tt_gf_wrapper,da186a238bbedbba3d1471c54dd6bbfc7d8b2862d2dce9fd0d0cc9704579e399,T0P3/tt_gf_wrapper.oas,Public,Experimental Tiny Tapeout shuttle with Analog design support,https://github.com/TinyTapeout/tinytapeout-gf-0p3
+T26A,Tiny Tapeout GF 26a,1x1,tt_gf_wrapper,f1fe03275b513c8c364625db540fda359057c4a9c2cb5283a3f92d5913c27005,T26A/tt_gf_wrapper.oas,Public,,https://github.com/TinyTapeout/tinytapeout-gf-26a
+T26B,Tiny Tapeout GF 26b,1x1,tt_gf_wrapper,8e74d7f09232998da14468dbadb1608be1dcd44f160ac8d42f847d772f120883,T26B/tt_gf_wrapper.oas,Public,,https://github.com/TinyTapeout/tinytapeout-gf-26b
+TQVA,TinyQV - Crowdsourced Risc-V SoC,0p5x0p5,chip_top,7b296cbd5bc12146e06b90b69a699d6d8ed192bbd11d7611169032b9edf70cee,TQVA/chip_top.oas,Public,A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a quarter sized slot.,https://github.com/MichaelBell/ws01-tinyQV
+TQVC,TinyQV - Crowdsourced Risc-V SoC (1x0.5),1x0p5,chip_top,91e1d0ca36b092672c864f8257369fad88b417ec2060dcf3c26cbff10bd4f0e7,TQVC/chip_top.oas,Public,A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a half height slot (but is otherwise identical to the quarter size version),https://github.com/MichaelBell/ws01-tinyQV
+TQVD,TinyQV - RISC-V SoC with HDMI output,0p5x0p5,chip_top,f4ab93b2b79917afe4ad833e81918b9659b0d11873c9f3e682e26fa4e656e0df,TQVD/chip_top.oas,Public,"This version of TinyQV uses the new 3v3 standard cell library, 3v3 SRAM macros and the split voltage pads.  Apart from that it is similar to the Run 1 TinyQV, but with additional scratch RAM, new HDMI/VGA text mode output support and a single 8-bit DAC.",https://github.com/MichaelBell/ws02-tinyQV
+TQVE,TinyQV - RISC-V SoC with experimental pad setup,0p5x0p5,chip_top,67b553d085bad20db1898fc5458e8875a7f82d59a7b519e3bcb8e71c247302e5,TQVE/chip_top.oas,Public,"This version of TinyQV uses the new 3v3 standard cell library, 3v3 SRAM macros and a single line of pads to allow more area with fewer pins.  The extra space is used for 9.5kB of scratch RAM.  It also has a USB CDC peripheral which should allow serial comms without an external UART.",
+WSLG,Wafer.Space Logo,1x1,chip_top,d437837bf44854c2b59aa8c0891d8a8fcb710d3f382ec9fe8da9130604590a8d,WSLG/chip_top.oas,Public,Die with a big wafer.space logo on it!,https://github.com/89Mods/ws-logo-die
