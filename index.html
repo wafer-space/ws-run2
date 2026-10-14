@@ -236,7 +236,7 @@
         </div>
         <p class="small text-muted mt-10 mb-0">Every design rendered from the layout at the same scale and placed where
           it sits on the 30 × 23.4 mm
-          reticle. Dark gaps are private designs. Select a die for its details.</p>
+          reticle. Dark gaps are private designs or empty slots.          Select a die for its details.</p>
       </div>
       <div class="col-lg-4">
         <h2 class="section-title mb-20">Shuttle status</h2>
@@ -381,15 +381,18 @@
         <table class="table table-sm run-table mb-0">
           <thead><tr><th>Standard cell library</th><th class="text-end">Logic cells</th><th class="text-end">Share</th></tr></thead>
           <tbody>
-            <tr><td>7t-3.3V <span class="text-muted small">mcu7t3v3</span></td>
+            <tr><td>AS 7t-3.3V <span class="text-muted small">as_sc_mcu7t3v3</span></td>
               <td class="text-end">1.3M</td>
               <td class="text-end">53%</td></tr>
             <tr><td>7t-5V <span class="text-muted small">mcu7t5v0</span></td>
               <td class="text-end">1.1M</td>
-              <td class="text-end">46%</td></tr>
+              <td class="text-end">45%</td></tr>
             <tr><td>9t-5V <span class="text-muted small">mcu9t5v0</span></td>
               <td class="text-end">46k</td>
               <td class="text-end">2%</td></tr>
+            <tr><td>AS extra 7t-5V <span class="text-muted small">as_ex_mcu7t5v0</span></td>
+              <td class="text-end">2k</td>
+              <td class="text-end">&lt;1%</td></tr>
           </tbody>
         </table>
       </div>
@@ -938,6 +941,89 @@
   </div>
 </div>
 
+<!-- Process features -->
+<div id="features" class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">Which parts of the process were used</h2>
+    <p class="lead text-center mb-40">Transistor voltages and optional devices across the 40 designs</p>
+    <div class="row gutter-50">
+      <div class="col-lg-5 mb-30">
+        <h3 class="mb-20">Transistor voltages</h3>
+        <div class="run-category">
+          <span class="run-category-name">3.3 V</span>
+          <span class="run-category-bar"><i style="width: 50.0%; background: #5ca7db"></i></span>
+          <span class="run-category-count">20</span>
+        </div>
+        <div class="run-category">
+          <span class="run-category-name">5 V</span>
+          <span class="run-category-bar"><i style="width: 67.5%; background: #5ca7db"></i></span>
+          <span class="run-category-count">27</span>
+        </div>
+        <div class="run-category">
+          <span class="run-category-name">6 V</span>
+          <span class="run-category-bar"><i style="width: 12.5%; background: #5ca7db"></i></span>
+          <span class="run-category-count">5</span>
+        </div>
+        <p class="small text-muted mt-10">A design counts for a voltage when its standard cells, SRAM or its own
+          transistors use it. 5 V and 6 V transistors share the thick gate oxide; the V5_XTOR marker tells them apart.</p>
+      </div>
+      <div class="col-lg-7 mb-30">
+        <h3 class="mb-20">Optional devices drawn by designers</h3>
+        <table class="table table-sm run-table bg-white">
+          <thead><tr><th>Device</th><th class="text-end">Designs</th><th>Which</th></tr></thead>
+          <tbody>
+            <tr><td>High-resistance poly resistors</td><td class="text-end">8</td>
+              <td><a class="run-mono" href="projects/AS04.html">AS04</a> <a class="run-mono" href="projects/CAB1.html">CAB1</a> <a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/NAX1.html">NAX1</a> <a class="run-mono" href="projects/OCD3.html">OCD3</a> <a class="run-mono" href="projects/T0P3.html">T0P3</a> <a class="run-mono" href="projects/T26A.html">T26A</a> <a class="run-mono" href="projects/TQVD.html">TQVD</a></td></tr>
+            <tr><td>MIM capacitors</td><td class="text-end">7</td>
+              <td><a class="run-mono" href="projects/0000.html">0000</a> <a class="run-mono" href="projects/AS04.html">AS04</a> <a class="run-mono" href="projects/CAB1.html">CAB1</a> <a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/NAX1.html">NAX1</a> <a class="run-mono" href="projects/OCD3.html">OCD3</a> <a class="run-mono" href="projects/RLCM.html">RLCM</a></td></tr>
+            <tr><td>Unsalicided poly resistors</td><td class="text-end">6</td>
+              <td><a class="run-mono" href="projects/AS04.html">AS04</a> <a class="run-mono" href="projects/CAB1.html">CAB1</a> <a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/MEME.html">MEME</a> <a class="run-mono" href="projects/NAX1.html">NAX1</a> <a class="run-mono" href="projects/T0P3.html">T0P3</a></td></tr>
+            <tr><td>MOS capacitors</td><td class="text-end">3</td>
+              <td><a class="run-mono" href="projects/AS04.html">AS04</a> <a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/T0P3.html">T0P3</a></td></tr>
+            <tr><td>Deep N-well</td><td class="text-end">3</td>
+              <td><a class="run-mono" href="projects/0000.html">0000</a> <a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/T0P3.html">T0P3</a></td></tr>
+            <tr><td>Salicided poly resistors</td><td class="text-end">1</td>
+              <td><a class="run-mono" href="projects/AS04.html">AS04</a></td></tr>
+            <tr><td>Diffusion resistors</td><td class="text-end">1</td>
+              <td><a class="run-mono" href="projects/AS04.html">AS04</a></td></tr>
+            <tr><td>Bipolar transistors</td><td class="text-end">1</td>
+              <td><a class="run-mono" href="projects/T0P3.html">T0P3</a></td></tr>
+            <tr><td>Schottky diodes</td><td class="text-end">1</td>
+              <td><a class="run-mono" href="projects/0000.html">0000</a></td></tr>
+          </tbody>
+        </table>
+<p class="small text-muted mb-0">Not drawn by any design: Native transistors, 10 V LDMOS, Zener diodes, eFuses, One-time programmable memory, Inductors.</p>        <p class="small text-muted">Only devices outside standard cells, SRAM macros and I/O pads count, since every
+          die has those. A single test structure counts the same as a large block.</p>
+      </div>
+    </div>
+    <div class="row gutter-50">
+      <div class="col-lg-6 mb-30">
+        <h3 class="mb-20">Licences</h3>
+        <table class="table table-sm run-table bg-white mb-10">
+          <thead><tr><th>Declared licence</th><th class="text-end">Designs</th></tr></thead>
+          <tbody>
+<tr><td>Apache-2.0</td><td class="text-end">29</td></tr><tr><td>MIT</td><td class="text-end">3</td></tr><tr><td>CERN-OHL-S-2.0</td><td class="text-end">2</td></tr><tr><td>CERN-OHL-P-2.0</td><td class="text-end">2</td></tr><tr><td>GPL-3.0-only</td><td class="text-end">1</td></tr><tr><td>BSD-3-Clause</td><td class="text-end">1</td></tr><tr><td>proprietary</td><td class="text-end">1</td></tr><tr><td>GPL-3.0-or-later</td><td class="text-end">1</td></tr>          </tbody>
+        </table>
+<p class="small text-muted mb-0">Repository licence differs from the declared one, or is
+          missing: <a class="run-mono" href="projects/0000.html">0000</a>
+          (no licence file), <a class="run-mono" href="projects/DPK1.html">DPK1</a>
+          (mismatch), <a class="run-mono" href="projects/GD04.html">GD04</a>
+          (mismatch), <a class="run-mono" href="projects/KIAN.html">KIAN</a>
+          (mismatch), <a class="run-mono" href="projects/RLCM.html">RLCM</a>
+          (no licence file), <a class="run-mono" href="projects/SCML.html">SCML</a>
+          (mismatch).</p>      </div>
+      <div class="col-lg-6 mb-30">
+        <h3 class="mb-20">Packaging and precheck</h3>
+        <ul class="run-method">
+          <li><strong>24</strong> of 40 designs selected chip-on-board packaging.</li>
+          <li><strong>39</strong> passed their latest platform precheck;
+            FC01 has no finished precheck recorded.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Density guidance -->
 <div id="density" class="wrapper dark-wrapper inverse-text">
   <div class="container inner">
@@ -956,7 +1042,7 @@
           <h3 class="mb-5 color-dark">~113,885</h3>
           <p class="mb-0 font-weight-600 color-dark">Inverters per mm²</p>
           <p class="mb-10 small text-muted">theoretical maximum</p>
-          <p class="mb-0 small text-muted">7t-3.3V: 114k <span class="run-mono">inv_2</span></p>
+          <p class="mb-0 small text-muted">AS 7t-3.3V: 114k <span class="run-mono">inv_2</span></p>
           <p class="mb-0 small text-muted">7t-5V: 114k <span class="run-mono">inv_1</span></p>
           <p class="mb-0 small text-muted">9t-5V: 89k <span class="run-mono">inv_1</span></p>
         </div>
@@ -966,7 +1052,7 @@
           <h3 class="mb-5 color-dark">~91,108</h3>
           <p class="mb-0 font-weight-600 color-dark">NAND gates per mm²</p>
           <p class="mb-10 small text-muted">theoretical maximum</p>
-          <p class="mb-0 small text-muted">7t-3.3V: 65k <span class="run-mono">nand2_2</span></p>
+          <p class="mb-0 small text-muted">AS 7t-3.3V: 65k <span class="run-mono">nand2_2</span></p>
           <p class="mb-0 small text-muted">7t-5V: 91k <span class="run-mono">nand2_1</span></p>
           <p class="mb-0 small text-muted">9t-5V: 71k <span class="run-mono">nand2_1</span></p>
         </div>
@@ -976,7 +1062,7 @@
           <h3 class="mb-5 color-dark">~75,923</h3>
           <p class="mb-0 font-weight-600 color-dark">Buffers per mm²</p>
           <p class="mb-10 small text-muted">theoretical maximum</p>
-          <p class="mb-0 small text-muted">7t-3.3V: 76k <span class="run-mono">buff_2</span></p>
+          <p class="mb-0 small text-muted">AS 7t-3.3V: 76k <span class="run-mono">buff_2</span></p>
           <p class="mb-0 small text-muted">7t-5V: 76k <span class="run-mono">buf_1</span></p>
           <p class="mb-0 small text-muted">9t-5V: 59k <span class="run-mono">buf_1</span></p>
         </div>
@@ -986,9 +1072,10 @@
           <h3 class="mb-5 color-dark">~16,872</h3>
           <p class="mb-0 font-weight-600 color-dark">Flip-flops per mm²</p>
           <p class="mb-10 small text-muted">theoretical maximum</p>
-          <p class="mb-0 small text-muted">7t-3.3V: 17k <span class="run-mono">dfxtp_2</span></p>
+          <p class="mb-0 small text-muted">AS 7t-3.3V: 17k <span class="run-mono">dfxtp_2</span></p>
           <p class="mb-0 small text-muted">7t-5V: 16k <span class="run-mono">dffq_1</span></p>
           <p class="mb-0 small text-muted">9t-5V: 13k <span class="run-mono">dffq_1</span></p>
+          <p class="mb-0 small text-muted">AS extra 7t-5V: 14k <span class="run-mono">dfxtp_2</span></p>
         </div>
       </div>
     </div>
@@ -1004,9 +1091,9 @@
       </div>
       <div class="col-md-4 mb-20">
         <div class="box bg-white shadow p-30 h-100">
-          <h3 class="mb-5 color-dark">30k</h3>
+          <h3 class="mb-5 color-dark">34k</h3>
           <p class="mb-0 font-weight-600 color-dark">Best single mm²</p>
-          <p class="mb-0 small text-muted">logic cells — 39% of the buffer maximum</p>
+          <p class="mb-0 small text-muted">logic cells — 45% of the buffer maximum</p>
           <p class="mb-0 small"><a href="projects/SCUP.html">GF180MCU Peripherals</a></p>
         </div>
       </div>
@@ -1069,85 +1156,85 @@
       <a class="run-row" href="projects/CLON.html">
         <span class="run-row-label"><strong>CLON</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 38.94%"></i>
+          <i class="peak" style="width: 39.42%"></i>
           <i class="core" style="width: 29.86%"></i>
         </span>
         <span class="run-row-value">23k <span class="text-muted">/ 30k</span></span>
       </a>
       <a class="run-row" href="projects/BTX1.html">
-        <span class="run-row-label"><strong>BTX1</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>BTX1</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 32.17%"></i>
+          <i class="peak" style="width: 32.65%"></i>
           <i class="core" style="width: 23.31%"></i>
         </span>
-        <span class="run-row-value">18k <span class="text-muted">/ 24k</span></span>
+        <span class="run-row-value">18k <span class="text-muted">/ 25k</span></span>
       </a>
       <a class="run-row" href="projects/SCUP.html">
-        <span class="run-row-label"><strong>SCUP</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>SCUP</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 39.38%"></i>
+          <i class="peak" style="width: 44.75%"></i>
           <i class="core" style="width: 22.06%"></i>
         </span>
-        <span class="run-row-value">17k <span class="text-muted">/ 30k</span></span>
+        <span class="run-row-value">17k <span class="text-muted">/ 34k</span></span>
       </a>
       <a class="run-row" href="projects/TQVA.html">
         <span class="run-row-label"><strong>TQVA</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 15.46%"></i>
+          <i class="peak" style="width: 29.81%"></i>
           <i class="core" style="width: 20.73%"></i>
         </span>
-        <span class="run-row-value">16k <span class="text-muted">/ —</span></span>
+        <span class="run-row-value">16k <span class="text-muted">/ 23k</span></span>
       </a>
       <a class="run-row" href="projects/MOLE.html">
-        <span class="run-row-label"><strong>MOLE</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>MOLE</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 30.64%"></i>
+          <i class="peak" style="width: 31.77%"></i>
           <i class="core" style="width: 19.54%"></i>
         </span>
-        <span class="run-row-value">15k <span class="text-muted">/ 23k</span></span>
+        <span class="run-row-value">15k <span class="text-muted">/ 24k</span></span>
       </a>
       <a class="run-row" href="projects/DPK2.html">
         <span class="run-row-label"><strong>DPK2</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 15.30%"></i>
+          <i class="peak" style="width: 27.74%"></i>
           <i class="core" style="width: 19.42%"></i>
         </span>
-        <span class="run-row-value">15k <span class="text-muted">/ —</span></span>
+        <span class="run-row-value">15k <span class="text-muted">/ 21k</span></span>
       </a>
       <a class="run-row" href="projects/DPK1.html">
         <span class="run-row-label"><strong>DPK1</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 18.25%"></i>
+          <i class="peak" style="width: 35.45%"></i>
           <i class="core" style="width: 15.92%"></i>
         </span>
-        <span class="run-row-value">12k <span class="text-muted">/ 14k</span></span>
+        <span class="run-row-value">12k <span class="text-muted">/ 27k</span></span>
       </a>
       <a class="run-row" href="projects/EURO.html">
         <span class="run-row-label"><strong>EURO</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 19.32%"></i>
+          <i class="peak" style="width: 35.60%"></i>
           <i class="core" style="width: 15.17%"></i>
         </span>
-        <span class="run-row-value">12k <span class="text-muted">/ 15k</span></span>
+        <span class="run-row-value">12k <span class="text-muted">/ 27k</span></span>
       </a>
       <a class="run-row" href="projects/T26B.html">
         <span class="run-row-label"><strong>T26B</strong> <span class="text-muted">mixed</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 23.38%"></i>
+          <i class="peak" style="width: 32.34%"></i>
           <i class="core" style="width: 14.39%"></i>
         </span>
-        <span class="run-row-value">11k <span class="text-muted">/ 18k</span></span>
+        <span class="run-row-value">11k <span class="text-muted">/ 25k</span></span>
       </a>
       <a class="run-row" href="projects/TQVE.html">
-        <span class="run-row-label"><strong>TQVE</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>TQVE</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 14.53%"></i>
+          <i class="peak" style="width: 20.94%"></i>
           <i class="core" style="width: 14.05%"></i>
         </span>
-        <span class="run-row-value">11k <span class="text-muted">/ 11k</span></span>
+        <span class="run-row-value">11k <span class="text-muted">/ 16k</span></span>
       </a>
       <a class="run-row" href="projects/TQVD.html">
-        <span class="run-row-label"><strong>TQVD</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>TQVD</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
           <i class="peak" style="width: 1.12%"></i>
           <i class="core" style="width: 13.75%"></i>
@@ -1157,31 +1244,31 @@
       <a class="run-row" href="projects/T26A.html">
         <span class="run-row-label"><strong>T26A</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 23.31%"></i>
+          <i class="peak" style="width: 29.97%"></i>
           <i class="core" style="width: 13.32%"></i>
         </span>
-        <span class="run-row-value">10k <span class="text-muted">/ 18k</span></span>
+        <span class="run-row-value">10k <span class="text-muted">/ 23k</span></span>
       </a>
       <a class="run-row" href="projects/CAB1.html">
         <span class="run-row-label"><strong>CAB1</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 22.13%"></i>
+          <i class="peak" style="width: 24.53%"></i>
           <i class="core" style="width: 11.63%"></i>
         </span>
-        <span class="run-row-value">9k <span class="text-muted">/ 17k</span></span>
+        <span class="run-row-value">9k <span class="text-muted">/ 19k</span></span>
       </a>
       <a class="run-row" href="projects/SCTP.html">
-        <span class="run-row-label"><strong>SCTP</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>SCTP</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 12.03%"></i>
+          <i class="peak" style="width: 18.59%"></i>
           <i class="core" style="width: 11.50%"></i>
         </span>
-        <span class="run-row-value">9k <span class="text-muted">/ 9k</span></span>
+        <span class="run-row-value">9k <span class="text-muted">/ 14k</span></span>
       </a>
       <a class="run-row" href="projects/NAX1.html">
-        <span class="run-row-label"><strong>NAX1</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>NAX1</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 4.69%"></i>
+          <i class="peak" style="width: 10.57%"></i>
           <i class="core" style="width: 11.12%"></i>
         </span>
         <span class="run-row-value">8k <span class="text-muted">/ —</span></span>
@@ -1189,69 +1276,69 @@
       <a class="run-row" href="projects/T0P3.html">
         <span class="run-row-label"><strong>T0P3</strong> <span class="text-muted">mixed</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 21.74%"></i>
+          <i class="peak" style="width: 32.44%"></i>
           <i class="core" style="width: 10.97%"></i>
         </span>
-        <span class="run-row-value">8k <span class="text-muted">/ 17k</span></span>
+        <span class="run-row-value">8k <span class="text-muted">/ 25k</span></span>
       </a>
       <a class="run-row" href="projects/SCML.html">
-        <span class="run-row-label"><strong>SCML</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>SCML</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 6.53%"></i>
+          <i class="peak" style="width: 17.45%"></i>
           <i class="core" style="width: 10.29%"></i>
         </span>
-        <span class="run-row-value">8k <span class="text-muted">/ —</span></span>
+        <span class="run-row-value">8k <span class="text-muted">/ 13k</span></span>
       </a>
       <a class="run-row" href="projects/AS04.html">
-        <span class="run-row-label"><strong>AS04</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>AS04</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 16.98%"></i>
+          <i class="peak" style="width: 24.58%"></i>
           <i class="core" style="width: 8.06%"></i>
         </span>
-        <span class="run-row-value">6k <span class="text-muted">/ 13k</span></span>
+        <span class="run-row-value">6k <span class="text-muted">/ 19k</span></span>
       </a>
       <a class="run-row" href="projects/TQVC.html">
         <span class="run-row-label"><strong>TQVC</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 15.14%"></i>
+          <i class="peak" style="width: 21.28%"></i>
           <i class="core" style="width: 8.05%"></i>
         </span>
-        <span class="run-row-value">6k <span class="text-muted">/ 11k</span></span>
+        <span class="run-row-value">6k <span class="text-muted">/ 16k</span></span>
       </a>
       <a class="run-row" href="projects/GD04.html">
         <span class="run-row-label"><strong>GD04</strong> <span class="text-muted">9t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 1.52%"></i>
+          <i class="peak" style="width: 23.93%"></i>
           <i class="core" style="width: 7.92%"></i>
         </span>
-        <span class="run-row-value">6k <span class="text-muted">/ —</span></span>
+        <span class="run-row-value">6k <span class="text-muted">/ 18k</span></span>
       </a>
       <a class="run-row" href="projects/KIAN.html">
-        <span class="run-row-label"><strong>KIAN</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>KIAN</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 18.25%"></i>
+          <i class="peak" style="width: 19.40%"></i>
           <i class="core" style="width: 7.09%"></i>
         </span>
-        <span class="run-row-value">5k <span class="text-muted">/ 14k</span></span>
+        <span class="run-row-value">5k <span class="text-muted">/ 15k</span></span>
       </a>
       <a class="run-row" href="projects/AMM1.html">
         <span class="run-row-label"><strong>AMM1</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 14.15%"></i>
+          <i class="peak" style="width: 24.48%"></i>
           <i class="core" style="width: 7.04%"></i>
         </span>
-        <span class="run-row-value">5k <span class="text-muted">/ 11k</span></span>
+        <span class="run-row-value">5k <span class="text-muted">/ 19k</span></span>
       </a>
       <a class="run-row" href="projects/CAFE.html">
         <span class="run-row-label"><strong>CAFE</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 5.41%"></i>
+          <i class="peak" style="width: 10.13%"></i>
           <i class="core" style="width: 5.08%"></i>
         </span>
-        <span class="run-row-value">4k <span class="text-muted">/ 4k</span></span>
+        <span class="run-row-value">4k <span class="text-muted">/ 8k</span></span>
       </a>
       <a class="run-row" href="projects/SCMT.html">
-        <span class="run-row-label"><strong>SCMT</strong> <span class="text-muted">7t-3.3V</span></span>
+        <span class="run-row-label"><strong>SCMT</strong> <span class="text-muted">AS 7t-3.3V</span></span>
         <span class="run-density">
           <i class="peak" style="width: 0.00%"></i>
           <i class="core" style="width: 4.38%"></i>
@@ -1261,18 +1348,18 @@
       <a class="run-row" href="projects/PSOC.html">
         <span class="run-row-label"><strong>PSOC</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 11.88%"></i>
+          <i class="peak" style="width: 4.79%"></i>
           <i class="core" style="width: 4.09%"></i>
         </span>
-        <span class="run-row-value">3k <span class="text-muted">/ 9k</span></span>
+        <span class="run-row-value">3k <span class="text-muted">/ 4k</span></span>
       </a>
       <a class="run-row" href="projects/QZ80.html">
         <span class="run-row-label"><strong>QZ80</strong> <span class="text-muted">9t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 3.59%"></i>
+          <i class="peak" style="width: 5.39%"></i>
           <i class="core" style="width: 2.96%"></i>
         </span>
-        <span class="run-row-value">2k <span class="text-muted">/ 3k</span></span>
+        <span class="run-row-value">2k <span class="text-muted">/ 4k</span></span>
       </a>
       <a class="run-row" href="projects/DCO0.html">
         <span class="run-row-label"><strong>DCO0</strong> <span class="text-muted">7t-5V</span></span>
@@ -1283,25 +1370,25 @@
         <span class="run-row-value">1k <span class="text-muted">/ 5k</span></span>
       </a>
       <a class="run-row" href="projects/WSLG.html">
-        <span class="run-row-label"><strong>WSLG</strong> <span class="text-muted">7t-5V</span></span>
+        <span class="run-row-label"><strong>WSLG</strong> <span class="text-muted">mixed</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 9.05%"></i>
+          <i class="peak" style="width: 14.63%"></i>
           <i class="core" style="width: 1.32%"></i>
         </span>
-        <span class="run-row-value">1k <span class="text-muted">/ 7k</span></span>
+        <span class="run-row-value">1k <span class="text-muted">/ 11k</span></span>
       </a>
       <a class="run-row" href="projects/HZ80.html">
         <span class="run-row-label"><strong>HZ80</strong> <span class="text-muted">9t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 3.92%"></i>
+          <i class="peak" style="width: 6.52%"></i>
           <i class="core" style="width: 1.24%"></i>
         </span>
-        <span class="run-row-value">1k <span class="text-muted">/ 3k</span></span>
+        <span class="run-row-value">1k <span class="text-muted">/ 5k</span></span>
       </a>
       <a class="run-row" href="projects/AS16.html">
         <span class="run-row-label"><strong>AS16</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 6.09%"></i>
+          <i class="peak" style="width: 7.15%"></i>
           <i class="core" style="width: 1.23%"></i>
         </span>
         <span class="run-row-value">1k <span class="text-muted">/ 5k</span></span>
@@ -1309,34 +1396,34 @@
       <a class="run-row" href="projects/SALU.html">
         <span class="run-row-label"><strong>SALU</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 1.38%"></i>
+          <i class="peak" style="width: 2.10%"></i>
           <i class="core" style="width: 0.93%"></i>
         </span>
-        <span class="run-row-value">1k <span class="text-muted">/ 1k</span></span>
+        <span class="run-row-value">1k <span class="text-muted">/ 2k</span></span>
       </a>
       <a class="run-row" href="projects/FS03.html">
         <span class="run-row-label"><strong>FS03</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 1.57%"></i>
+          <i class="peak" style="width: 2.36%"></i>
           <i class="core" style="width: 0.91%"></i>
         </span>
-        <span class="run-row-value">1k <span class="text-muted">/ 1k</span></span>
+        <span class="run-row-value">1k <span class="text-muted">/ 2k</span></span>
       </a>
       <a class="run-row" href="projects/FS01.html">
         <span class="run-row-label"><strong>FS01</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 1.89%"></i>
+          <i class="peak" style="width: 2.43%"></i>
           <i class="core" style="width: 0.85%"></i>
         </span>
-        <span class="run-row-value">1k <span class="text-muted">/ 1k</span></span>
+        <span class="run-row-value">1k <span class="text-muted">/ 2k</span></span>
       </a>
       <a class="run-row" href="projects/FS02.html">
         <span class="run-row-label"><strong>FS02</strong> <span class="text-muted">7t-5V</span></span>
         <span class="run-density">
-          <i class="peak" style="width: 0.04%"></i>
+          <i class="peak" style="width: 2.38%"></i>
           <i class="core" style="width: 0.84%"></i>
         </span>
-        <span class="run-row-value">1k <span class="text-muted">/ —</span></span>
+        <span class="run-row-value">1k <span class="text-muted">/ 2k</span></span>
       </a>
     </div>
   </div>
@@ -1367,7 +1454,8 @@
  · 6k logic cells · 2 SRAM      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1383,8 +1471,9 @@
         ½ × 1 slot
  · 66k logic cells · 8 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1401,7 +1490,8 @@
  · 36k logic cells · 6 SRAM      </p>
       <p class="mb-0 small run-card-icons">
 <span title="Placed 2 times on the reticle">× 2</span>      </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1417,8 +1507,9 @@
         1 × 1 slot
  · 77k logic cells · 21 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1435,7 +1526,8 @@
  · 18k logic cells · 8 SRAM      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1451,8 +1543,9 @@
         ½ × ½ slot
  · 2k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1469,7 +1562,8 @@
  · 36k logic cells · 1 SRAM      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1486,7 +1580,8 @@
  · 36k logic cells · 1 SRAM      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1502,8 +1597,9 @@
         ½ × ½ slot
  · 24k logic cells · 5 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+<span class="run-chip">High-resistance poly resistors</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1520,7 +1616,8 @@
  · 24k logic cells · 10 SRAM      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -1542,8 +1639,9 @@
         1 × 1 slot
  · 253k logic cells · 19 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1559,8 +1657,9 @@
         ½ × ½ slot
  · 9k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1576,8 +1675,9 @@
         ½ × ½ slot
  · 33k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1593,8 +1693,9 @@
         1 × 1 slot
  · 111k logic cells · 38 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1610,8 +1711,9 @@
         1 × 1 slot
  · 125k logic cells · 17 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1627,8 +1729,9 @@
         1 × 1 slot
  · 239k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -1650,8 +1753,9 @@
         1 × 1 slot
  · 87k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+<span class="run-chip">MIM capacitors</span><span class="run-chip">MOS capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Salicided poly resistors</span><span class="run-chip">Diffusion resistors</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1667,8 +1771,9 @@
         ½ × 1 slot
  · 99k transistors      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V · 6 V
+<span class="run-chip">MIM capacitors</span><span class="run-chip">MOS capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Deep N-well</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1685,7 +1790,8 @@
  · 119k logic cells · 1 SRAM      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V · 6 V
+<span class="run-chip">MOS capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Deep N-well</span><span class="run-chip">Bipolar transistors</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1702,7 +1808,8 @@
  · 144k logic cells · 2 SRAM      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
+<span class="run-chip">High-resistance poly resistors</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1719,7 +1826,8 @@
  · 156k logic cells · custom SRAM      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -1741,8 +1849,9 @@
         ½ × 1 slot
  · 4k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1758,8 +1867,9 @@
         ½ × 1 slot
  · 3k logic cells · custom SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1775,8 +1885,9 @@
         ½ × 1 slot
  · 4k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1792,8 +1903,9 @@
         1 × ½ slot
  · 123 logic cells · 4 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+<span class="run-chip">MIM capacitors</span><span class="run-chip">High-resistance poly resistors</span></p>    </div>
   </a>
 </div>
     </div>
@@ -1816,7 +1928,8 @@
  · 40 logic cells      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V · 6 V
+<span class="run-chip">MIM capacitors</span><span class="run-chip">Deep N-well</span><span class="run-chip">Schottky diodes</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1832,8 +1945,9 @@
         1 × ½ slot
  · 7k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1849,8 +1963,9 @@
         1 × ½ slot
  · 68k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -1872,8 +1987,9 @@
         1 × ½ slot
  · 32k logic cells      </p>
       <p class="mb-0 small run-card-icons">
-<span title="Placed 2 times on the reticle">× 2</span>      </p>
-    </div>
+<span title="Placed 2 times on the reticle">× 2</span><span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1890,7 +2006,8 @@
  · 5k logic cells      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1907,7 +2024,8 @@
  · 5k logic cells      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -1929,8 +2047,9 @@
         1 × ½ slot
  · 52k logic cells · 6 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V · 6 V
+<span class="run-chip">MIM capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1946,8 +2065,9 @@
         1 × ½ slot
  · 50k logic cells · 12 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V · 5 V · 6 V
+<span class="run-chip">MIM capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1963,8 +2083,9 @@
         1 × 1 slot
  · 48k logic cells · 41 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -1987,7 +2108,8 @@
  · 226 logic cells      </p>
       <p class="mb-0 small run-card-icons">
 <span title="Placed 2 times on the reticle">× 2</span>      </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+<span class="run-chip">Unsalicided poly resistors</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -2004,7 +2126,8 @@
  · 14k logic cells      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -2043,7 +2166,7 @@
         ½ × 1 slot
  · 44k transistors      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
     </div>
   </a>
 </div>
@@ -2066,8 +2189,9 @@
         1 × 1 slot
  · 212k logic cells · 13 SRAM      </p>
       <p class="mb-0 small run-card-icons">
-      </p>
-    </div>
+<span title="Chip-on-board packaging selected">CoB</span>      </p>
+<p class="mb-0 small text-muted run-card-features">3.3 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -2090,7 +2214,8 @@
  · 324k logic cells      </p>
       <p class="mb-0 small run-card-icons">
       </p>
-    </div>
+<p class="mb-0 small text-muted run-card-features">5 V
+</p>    </div>
   </a>
 </div>
     </div>
@@ -2108,17 +2233,17 @@
         <ul class="run-method">
           <li><strong>Logic cells</strong> are standard cell instances, excluding fillers, taps, antenna diodes and tie cells.</li>
           <li><strong>Transistors</strong> are places where gate polysilicon crosses diffusion.</li>
-          <li><strong>Core area</strong> is the die minus a 350 µm pad ring on each side.</li>
+          <li><strong>Core area:</strong> Core area is the die minus a 350 µm pad ring on each side.</li>
           <li><strong>Theoretical maximum</strong> tiles one cell at its placement boundary with no routing.</li>
-          <li><strong>Densest mm²</strong> is the best cell of a 1 mm grid over each die, skipping SRAM.</li>
-        </ul>
+<li><strong>Densest mm²</strong> is the best 1 mm square anywhere in each die, sliding in
+            0.1 mm steps and avoiding SRAM.</li>        </ul>
       </div>
       <div class="col-lg-6 mb-30">
         <p>The full written analysis is the
           <a href="https://github.com/wafer-space/ws-run2/blob/density-report/reticle_density_report.md">density report</a>.
           The measurements behind it:</p>
         <ul class="run-files">
-<li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
+<li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_features.csv">reticle_analysis_features.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_map.csv">reticle_analysis_map.csv</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_analysis_sram_rects.csv">reticle_analysis_sram_rects.csv</a></li><li><a href="data/reticle_analysis_windows.csv">reticle_analysis_windows.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
         <p class="small text-muted mb-0">Generated by
           <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from
           <span class="run-mono">layout/G802.oas</span> (md5 <span class="run-mono">57fa57f52eac82835a051f2a353e5a30</span>).</p>
@@ -2151,7 +2276,7 @@
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
-              <p class="small mb-0">Generated on 2026-10-05 by
+              <p class="small mb-0">Generated on 2026-10-15 by
                 <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
                 layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
             </div>

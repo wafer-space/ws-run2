@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wafer.space GF180MCU Run 2 designs</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root { --bg: transparent; --card: #ffffff; --ink: #343f52; --muted: #6c757d; --line: #e6ebf0; --accent: #3f78e0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --card: #262626; --ink: #e0e0e0; --muted: #a0a0a0; --line: #3a3a3a; --accent: #7aa7ff; }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink);
+      font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .strip { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 8px 16px 14px;
+      height: 330px; align-items: stretch; }
+    .card { flex: 0 0 auto; width: 300px; scroll-snap-align: start; background: var(--card); border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(30, 34, 40, 0.12); text-decoration: none; color: inherit; display: flex;
+      flex-direction: column; overflow: hidden; }
+    .card:hover, .card:focus { outline: 2px solid var(--accent); }
+    .images { display: flex; height: 200px; background: #0a0c14; }
+    .images figure { margin: 0; flex: 1 1 0; position: relative; display: flex; align-items: center;
+      justify-content: center; overflow: hidden; }
+    .images figure + figure { border-left: 1px solid #222; }
+    .images img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    .images figcaption { position: absolute; bottom: 4px; left: 6px; font-size: 10px; color: #fff;
+      background: rgba(0, 0, 0, 0.55); padding: 0 4px; border-radius: 3px; }
+    .body { padding: 10px 12px; }
+    .code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); }
+    .name { font-weight: 700; font-size: 14px; line-height: 1.25; margin: 2px 0 4px; display: -webkit-box;
+      -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .meta { font-size: 12px; color: var(--muted); }
+    .more { flex: 0 0 auto; width: 180px; scroll-snap-align: start; display: flex; align-items: center;
+      justify-content: center; text-align: center; font-weight: 700; color: var(--accent); text-decoration: none;
+      border: 2px dashed var(--line); border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="strip">
+    <a class="card" href="https://wafer.space/ws-run2/projects/0000.html" target="_top">
+      <div class="images">
+<figure><img src="renders/0000_thumb.webp" alt="Layout render of ICELab Test Chip" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">0000 · Analog and mixed-signal</div>
+        <div class="name">ICELab Test Chip</div>
+        <div class="meta">1 × ½ slot · 40 logic cells · 3.3 V, 5 V, 6 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/AMM1.html" target="_top">
+      <div class="images">
+<figure><img src="renders/AMM1_thumb.webp" alt="Layout render of raybox-zero wafer.space run 2 half height" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">AMM1 · Retro computing</div>
+        <div class="name">raybox-zero wafer.space run 2 half height</div>
+        <div class="meta">1 × ½ slot · 32k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/AS04.html" target="_top">
+      <div class="images">
+<figure><img src="renders/AS04_thumb.webp" alt="Layout render of AS04 Multi-Project die using 3.3V SCL" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">AS04 · Multi-project die</div>
+        <div class="name">AS04 Multi-Project die using 3.3V SCL</div>
+        <div class="meta">1 × 1 slot · 87k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/AS16.html" target="_top">
+      <div class="images">
+<figure><img src="renders/AS16_thumb.webp" alt="Layout render of AS16 CPU" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">AS16 · RISC-V and CPUs</div>
+        <div class="name">AS16 CPU</div>
+        <div class="meta">1 × ½ slot · 6k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/BTX1.html" target="_top">
+      <div class="images">
+<figure><img src="renders/BTX1_thumb.webp" alt="Layout render of BTX" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">BTX1 · Accelerators</div>
+        <div class="name">BTX</div>
+        <div class="meta">1 × 1 slot · 253k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/CAB1.html" target="_top">
+      <div class="images">
+<figure><img src="renders/CAB1_thumb.webp" alt="Layout render of Cabrera CoB" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">CAB1 · Other digital</div>
+        <div class="name">Cabrera CoB</div>
+        <div class="meta">1 × ½ slot · 52k logic cells · 3.3 V, 5 V, 6 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/CAFE.html" target="_top">
+      <div class="images">
+<figure><img src="renders/CAFE_thumb.webp" alt="Layout render of Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">CAFE · Accelerators</div>
+        <div class="name">Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version</div>
+        <div class="meta">½ × ½ slot · 9k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/CLON.html" target="_top">
+      <div class="images">
+<figure><img src="renders/CLON_thumb.webp" alt="Layout render of Cloneless2" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">CLON · Security</div>
+        <div class="name">Cloneless2</div>
+        <div class="meta">1 × 1 slot · 324k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/DCO0.html" target="_top">
+      <div class="images">
+<figure><img src="renders/DCO0_thumb.webp" alt="Layout render of Standard Cell DCO+TDC" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">DCO0 · Analog and mixed-signal</div>
+        <div class="name">Standard Cell DCO+TDC</div>
+        <div class="meta">1 × ½ slot · 7k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/DPK1.html" target="_top">
+      <div class="images">
+<figure><img src="renders/DPK1_thumb.webp" alt="Layout render of bio180" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">DPK1 · RISC-V and CPUs</div>
+        <div class="name">bio180</div>
+        <div class="meta">½ × 1 slot · 66k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/DPK2.html" target="_top">
+      <div class="images">
+<figure><img src="renders/DPK2_thumb.webp" alt="Layout render of cordic-romless-x8" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">DPK2 · Accelerators</div>
+        <div class="name">cordic-romless-x8</div>
+        <div class="meta">½ × ½ slot · 33k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/EURO.html" target="_top">
+      <div class="images">
+<figure><img src="renders/EURO_thumb.webp" alt="Layout render of EuroSynth" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">EURO · Analog and mixed-signal</div>
+        <div class="name">EuroSynth</div>
+        <div class="meta">1 × ½ slot · 68k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/FC01.html" target="_top">
+      <div class="images">
+<figure><img src="renders/FC01_thumb.webp" alt="Layout render of Flip Chip pad test version 1" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">FC01 · Test structures</div>
+        <div class="name">Flip Chip pad test version 1</div>
+        <div class="meta">½ × ½ slot</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/FS01.html" target="_top">
+      <div class="images">
+<figure><img src="renders/FS01_thumb.webp" alt="Layout render of Test chip with 3.3V SRAM blocks using regular design rules" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">FS01 · Memory test chip</div>
+        <div class="name">Test chip with 3.3V SRAM blocks using regular design rules</div>
+        <div class="meta">½ × 1 slot · 4k logic cells · 3.3 V, 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/FS02.html" target="_top">
+      <div class="images">
+<figure><img src="renders/FS02_thumb.webp" alt="Layout render of Test chip with 3.3V SRAM blocks using SRAM design rules" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">FS02 · Memory test chip</div>
+        <div class="name">Test chip with 3.3V SRAM blocks using SRAM design rules</div>
+        <div class="meta">½ × 1 slot · 3k logic cells · 3.3 V, 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/FS03.html" target="_top">
+      <div class="images">
+<figure><img src="renders/FS03_thumb.webp" alt="Layout render of Test chip with 5V SRAM blocks" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">FS03 · Memory test chip</div>
+        <div class="name">Test chip with 5V SRAM blocks</div>
+        <div class="meta">½ × 1 slot · 4k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/GD04.html" target="_top">
+      <div class="images">
+<figure><img src="renders/GD04_thumb.webp" alt="Layout render of Racquet Wide 1x0.5" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">GD04 · RISC-V and CPUs</div>
+        <div class="name">Racquet Wide 1x0.5</div>
+        <div class="meta">1 × ½ slot · 36k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/HZ80.html" target="_top">
+      <div class="images">
+<figure><img src="renders/HZ80_thumb.webp" alt="Layout render of FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">HZ80 · Retro computing</div>
+        <div class="name">FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)</div>
+        <div class="meta">½ × 1 slot · 5k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/ISHI.html" target="_top">
+      <div class="images">
+<figure><img src="renders/ISHI_thumb.webp" alt="Layout render of ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">ISHI · Multi-project die</div>
+        <div class="name">ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2</div>
+        <div class="meta">½ × 1 slot · 3.3 V, 5 V, 6 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/KIAN.html" target="_top">
+      <div class="images">
+<figure><img src="renders/KIAN_thumb.webp" alt="Layout render of KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">KIAN · RISC-V and CPUs</div>
+        <div class="name">KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2</div>
+        <div class="meta">1 × 1 slot · 77k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/MEME.html" target="_top">
+      <div class="images">
+<figure><img src="renders/MEME_thumb.webp" alt="Layout render of Artwork Meme Chip" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">MEME · Art and logos</div>
+        <div class="name">Artwork Meme Chip</div>
+        <div class="meta">1 × ½ slot · 226 logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/MOLE.html" target="_top">
+      <div class="images">
+<figure><img src="renders/MOLE_thumb.webp" alt="Layout render of FABulous FPGA" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">MOLE · FPGA</div>
+        <div class="name">FABulous FPGA</div>
+        <div class="meta">1 × 1 slot · 212k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/NAX1.html" target="_top">
+      <div class="images">
+<figure><img src="renders/NAX1_thumb.webp" alt="Layout render of Naxos CoB" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">NAX1 · Other digital</div>
+        <div class="name">Naxos CoB</div>
+        <div class="meta">1 × ½ slot · 50k logic cells · 3.3 V, 5 V, 6 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/OCD3.html" target="_top">
+      <div class="images">
+<figure><img src="renders/OCD3_thumb.webp" alt="Layout render of 3.3V SRAM test 2" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">OCD3 · Memory test chip</div>
+        <div class="name">3.3V SRAM test 2</div>
+        <div class="meta">1 × ½ slot · 123 logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/PSOC.html" target="_top">
+      <div class="images">
+<figure><img src="renders/PSOC_thumb.webp" alt="Layout render of Simplest possible PicoSoC implementation using wafer.space flow" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">PSOC · RISC-V and CPUs</div>
+        <div class="name">Simplest possible PicoSoC implementation using wafer.space flow</div>
+        <div class="meta">1 × ½ slot · 18k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/QZ80.html" target="_top">
+      <div class="images">
+<figure><img src="renders/QZ80_thumb.webp" alt="Layout render of FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot)" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">QZ80 · Retro computing</div>
+        <div class="name">FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot)</div>
+        <div class="meta">½ × ½ slot · 5k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/RLCM.html" target="_top">
+      <div class="images">
+<figure><img src="renders/RLCM_thumb.webp" alt="Layout render of RLCM: Test Passives For GF180MCUD" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">RLCM · Test structures</div>
+        <div class="name">RLCM: Test Passives For GF180MCUD</div>
+        <div class="meta">½ × 1 slot</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/SALU.html" target="_top">
+      <div class="images">
+<figure><img src="renders/SALU_thumb.webp" alt="Layout render of Simple ALU" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">SALU · RISC-V and CPUs</div>
+        <div class="name">Simple ALU</div>
+        <div class="meta">½ × ½ slot · 2k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/SCML.html" target="_top">
+      <div class="images">
+<figure><img src="renders/SCML_thumb.webp" alt="Layout render of ML-Audio SC" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">SCML · Accelerators</div>
+        <div class="name">ML-Audio SC</div>
+        <div class="meta">1 × 1 slot · 111k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/SCMT.html" target="_top">
+      <div class="images">
+<figure><img src="renders/SCMT_thumb.webp" alt="Layout render of microTheia" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">SCMT · Other digital</div>
+        <div class="name">microTheia</div>
+        <div class="meta">1 × 1 slot · 48k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/SCTP.html" target="_top">
+      <div class="images">
+<figure><img src="renders/SCTP_thumb.webp" alt="Layout render of SlugTPU" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">SCTP · Accelerators</div>
+        <div class="name">SlugTPU</div>
+        <div class="meta">1 × 1 slot · 125k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/SCUP.html" target="_top">
+      <div class="images">
+<figure><img src="renders/SCUP_thumb.webp" alt="Layout render of GF180MCU Peripherals" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">SCUP · Accelerators</div>
+        <div class="name">GF180MCU Peripherals</div>
+        <div class="meta">1 × 1 slot · 239k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/T0P3.html" target="_top">
+      <div class="images">
+<figure><img src="renders/T0P3_thumb.webp" alt="Layout render of Tiny Tapeout GF 0p3" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">T0P3 · Multi-project die</div>
+        <div class="name">Tiny Tapeout GF 0p3</div>
+        <div class="meta">1 × 1 slot · 119k logic cells · 3.3 V, 5 V, 6 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/T26A.html" target="_top">
+      <div class="images">
+<figure><img src="renders/T26A_thumb.webp" alt="Layout render of Tiny Tapeout GF 26a" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">T26A · Multi-project die</div>
+        <div class="name">Tiny Tapeout GF 26a</div>
+        <div class="meta">1 × 1 slot · 144k logic cells · 3.3 V, 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/T26B.html" target="_top">
+      <div class="images">
+<figure><img src="renders/T26B_thumb.webp" alt="Layout render of Tiny Tapeout GF 26b" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">T26B · Multi-project die</div>
+        <div class="name">Tiny Tapeout GF 26b</div>
+        <div class="meta">1 × 1 slot · 156k logic cells · 3.3 V, 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/TQVA.html" target="_top">
+      <div class="images">
+<figure><img src="renders/TQVA_thumb.webp" alt="Layout render of TinyQV - Crowdsourced Risc-V SoC" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">TQVA · RISC-V and CPUs</div>
+        <div class="name">TinyQV - Crowdsourced Risc-V SoC</div>
+        <div class="meta">½ × ½ slot · 36k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/TQVC.html" target="_top">
+      <div class="images">
+<figure><img src="renders/TQVC_thumb.webp" alt="Layout render of TinyQV - Crowdsourced Risc-V SoC (1x0.5)" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">TQVC · RISC-V and CPUs</div>
+        <div class="name">TinyQV - Crowdsourced Risc-V SoC (1x0.5)</div>
+        <div class="meta">1 × ½ slot · 36k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/TQVD.html" target="_top">
+      <div class="images">
+<figure><img src="renders/TQVD_thumb.webp" alt="Layout render of TinyQV - RISC-V SoC with HDMI output" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">TQVD · RISC-V and CPUs</div>
+        <div class="name">TinyQV - RISC-V SoC with HDMI output</div>
+        <div class="meta">½ × ½ slot · 24k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/TQVE.html" target="_top">
+      <div class="images">
+<figure><img src="renders/TQVE_thumb.webp" alt="Layout render of TinyQV - RISC-V SoC with experimental pad setup" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">TQVE · RISC-V and CPUs</div>
+        <div class="name">TinyQV - RISC-V SoC with experimental pad setup</div>
+        <div class="meta">½ × ½ slot · 24k logic cells · 3.3 V</div>
+      </div>
+    </a>
+    <a class="card" href="https://wafer.space/ws-run2/projects/WSLG.html" target="_top">
+      <div class="images">
+<figure><img src="renders/WSLG_thumb.webp" alt="Layout render of Wafer.Space Logo" loading="lazy"></figure>      </div>
+      <div class="body">
+        <div class="code">WSLG · Art and logos</div>
+        <div class="name">Wafer.Space Logo</div>
+        <div class="meta">1 × 1 slot · 14k logic cells · 5 V</div>
+      </div>
+    </a>
+    <a class="more" href="https://wafer.space/ws-run2/" target="_top">All 40 designs<br>on GF180MCU Run 2 →</a>
+  </div>
+</body>
+</html>

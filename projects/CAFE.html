@@ -3,11 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <title>CAFE Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version — GF180MCU Run 2</title>
-  <meta name="description" content="This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. Both designs have been validated on an FPGA. This is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.">
+  <meta name="description" content="This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. 
+
+
+Both designs have been validated on an FPGA. 
+
+This is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:type" content="website">
   <meta property="og:title" content="CAFE Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version — GF180MCU Run 2">
-  <meta property="og:description" content="This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. Both designs have been validated on an FPGA. This is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.">
+  <meta property="og:description" content="This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. 
+
+
+Both designs have been validated on an FPGA. 
+
+This is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.">
 <meta property="og:image" content="https://wafer.space/ws-run2/renders/reticle.webp">
   <script>
     // Same theme preference as the main website, applied before first paint.
@@ -112,7 +122,8 @@
       </div>
 
       <div class="col-lg-5">
-<p class="lead">This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. Both designs have been validated on an FPGA. This is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.</p>        <p>
+        <div class="run-description"><p class="lead">This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. </p><p>Both designs have been validated on an FPGA. </p><p>This is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.</p></div>
+        <p>
           <a class="btn btn-default btn-sm mb-10" href="https://github.com/Essenceia/Expresso_ASIC_Chip">Source repository</a>
         </p>
         <table class="table table-sm run-table">
@@ -132,16 +143,41 @@
           </tbody>
         </table>
 
+        <h4 class="mb-10">Submission</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Licence</th><td>CERN-OHL-S-2.0 <span class="text-muted">declared</span>
+<br><span class="text-muted">Repository: CERN-OHL-S-2.0
+ — agrees</span>
+<br><span class="small text-muted">Repository checked at <span class="run-mono">80a20dedd124</span></span></td></tr>
+            <tr><th>Chip-on-board</th><td>Selected at submission
+</td></tr>
+            <tr><th>Precheck</th><td>Passed
+              <span class="text-muted">on 2026-08-02,
+                gf180mcu-precheck 1.7.3</span>
+</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="mb-10">Process features</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>5 V</th><td>7t-5V standard cells</td></tr>
+            <tr><th>I/O library</th><td><span class="run-mono">gf180mcu_fd_io</span> <span class="text-muted">(424 cells)</span></td></tr>
+          </tbody>
+        </table>
+        <p class="small text-muted">Devices the designer drew, outside standard cells, SRAM macros and pads.</p>
+
         <h4 class="mb-10">Logic density</h4>
         <table class="table table-sm run-table">
           <tbody>
             <tr><th>Core average</th><td>4k cells/mm²
               <span class="text-muted">(5% of buffer maximum)</span></td></tr>
-            <tr><th>Densest mm²</th><td>4k cells
-              <span class="text-muted">(5% of buffer maximum)</span></td></tr>
+            <tr><th>Densest mm²</th><td>8k cells
+              <span class="text-muted">(10% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>12%</td></tr>
             <tr><th>Transistor density</th><td>195k/mm² average,
-              140k in the densest mm²</td></tr>
+              248k in the densest mm²</td></tr>
           </tbody>
         </table>
       </div>
@@ -214,15 +250,17 @@
         <h3 class="mb-10">Logic density map</h3>
         <svg class="run-heatmap" viewBox="0 0 1.94 2.53" role="img"
              aria-label="Logic cells per square millimetre across the die">
-          <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.063"><title>14 logic cells, 74,822 transistors</title></rect>
-<text x="0.500" y="2.030" class="">&lt;1k</text>          <rect x="1.000" y="1.530" width="0.940" height="1.000" style="fill-opacity: 0.294"><title>1,025 logic cells, 70,497 transistors</title></rect>
-<text x="1.470" y="2.030" class="">1k</text>          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.865"><title>3,517 logic cells, 139,524 transistors</title></rect>
-<text x="0.500" y="1.030" class="light">4k</text>          <rect x="1.000" y="0.530" width="0.940" height="1.000" style="fill-opacity: 1.000"><title>4,109 logic cells, 130,692 transistors</title></rect>
-<text x="1.470" y="1.030" class="light">4k</text>          <rect x="0.000" y="0.000" width="1.000" height="0.530" style="fill-opacity: 0.077"><title>74 logic cells, 15,012 transistors</title></rect>
-          <rect x="1.000" y="0.000" width="0.940" height="0.530" style="fill-opacity: 0.062"><title>8 logic cells, 13,629 transistors</title></rect>
+          <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.063"><title>14 logic cells, 74,404 transistors</title></rect>
+<text x="0.500" y="2.030" class="">&lt;1k</text>          <rect x="1.000" y="1.530" width="0.936" height="1.000" style="fill-opacity: 0.294"><title>1,025 logic cells, 70,340 transistors</title></rect>
+<text x="1.468" y="2.030" class="">1k</text>          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.813"><title>3,517 logic cells, 139,008 transistors</title></rect>
+<text x="0.500" y="1.030" class="light">4k</text>          <rect x="1.000" y="0.530" width="0.936" height="1.000" style="fill-opacity: 1.000"><title>4,109 logic cells, 130,469 transistors</title></rect>
+<text x="1.468" y="1.030" class="light">4k</text>          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.090"><title>74 logic cells, 14,979 transistors</title></rect>
+          <rect x="1.000" y="-0.001" width="0.936" height="0.531" style="fill-opacity: 0.063"><title>8 logic cells, 13,621 transistors</title></rect>
+          <rect class="window" x="0.500" y="0.630" width="1" height="1"><title>Densest SRAM-free mm²: 7,693 logic cells</title></rect>
         </svg>
-        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched squares overlap an
-          SRAM macro and are not counted. Edge squares are smaller than 1 mm².</p>
+        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
+          macros; the bold outline is the densest 1 mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps. Edge squares are smaller than 1 mm².</p>
       </div>
     </div>
   </div>
@@ -262,7 +300,7 @@
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
-              <p class="small mb-0">Generated on 2026-10-05 by
+              <p class="small mb-0">Generated on 2026-10-15 by
                 <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
                 layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
             </div>
