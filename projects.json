@@ -1,0 +1,1458 @@
+{
+ "projects": {
+  "0000": {
+   "chip_on_board": false,
+   "description": "In this project, we include various floating-gate and non-floating gate standard cells for characterization. \nThese include: \n3 Various charge pumps,\n4x2 array of indirectly programmed floating gates,\n2 transconductance amplifiers,\n1 floating gate characterization cell,\nNFET & PFET characterization cells",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "other",
+    "repo_checked": "https://github.com/GTIceLab/ASHES-GF180nm",
+    "repo_commit": "8c360e2ad484",
+    "repo_files": [],
+    "repo_headers": [],
+    "status": "no licence file"
+   },
+   "name": "ICELab Test Chip",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "2ee671c4daf8c9cb6278822ee0cf215d57dfb86816f391fae09d2a37b83e92b8",
+     "output_gds": "f52343dd6e84186e533604ab47f826f42947ab033246037d7341224896830878",
+     "runs_archive": "aa4ccdf3fba8cf0bd47e850364771b25c6f8ee40479b52476a07e0a01d4247d2"
+    },
+    "created_at": "2026-08-03T08:05:26.208299+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "786",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/GTIceLab/ASHES-GF180nm",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-15T19:36:38.471924+00:00"
+  },
+  "AMM1": {
+   "chip_on_board": true,
+   "description": "LibreLane digital project implementing Anton Maurovic's (algofoogle's) raybox-zero \"3D\" ray caster demo with SPI interface for \"game like\" control by a host PC or MCU, optional texture-map QSPI ROM interface, and Tiny VGA compatible digital RGB222 VGA output.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/algofoogle/gf180ws2-raybox-zero",
+    "repo_commit": "f5bbcef7564e",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "raybox-zero wafer.space run 2 half height",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "579ea01fa07a0ef4a2380be157bea3c922bd4d06b66967316e470379d7f537ed",
+     "output_gds": "9fd12a480a5a546316cd773c73d38bf3dab0793bb342bcfeea1900322d284390",
+     "runs_archive": "dc1a25ba520b05d24c2f87961a48e58626b8fdf6dcd7ba1b298a5b170d7ed3e5"
+    },
+    "created_at": "2026-07-15T03:29:44.287743+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:fe44a8d260dc38c54dab80a93f184c35054884fb38b6ade992e9a1e7721e6cd7",
+    "id": "554",
+    "is_manufacturable": true,
+    "precheck_version": "",
+    "status": "finished",
+    "tool_versions": {
+     "precheck": "unknown"
+    }
+   },
+   "repository": "https://github.com/algofoogle/gf180ws2-raybox-zero",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-15T07:55:20.024853+00:00"
+  },
+  "AS04": {
+   "chip_on_board": true,
+   "description": "Contains:\n- 6502/6510/PLA replicas\n- SID replicas\n- rv32ima_zicsr_smnmi core\n- Retro DRAM controller\n- GPIO chip\n- NTSC Test signal generator\n- FM Synth\n- Digital-to-Analog converters\n- Two layouts generated using [FeatherLane](https://codeberg.org/TholinVali/FeatherLane)",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/AvalonSemiconductors/ws-submission-2026/",
+    "repo_commit": "a8d75525ecc6",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "AS04 Multi-Project die using 3.3V SCL",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "e710b25a8dc80e1ed30c01fb5474e6e4987494c17b171398134cb5b81a0125f6",
+     "output_gds": "3601f75953aab1b4d93dd772bf08884288c2d5a4be77bb4c48d4bf1fdc12e29e",
+     "runs_archive": "7f03fb2a26fcf959ac998671538d8ed81c9a3b18548e48f5c831845a09c3f2c2"
+    },
+    "created_at": "2026-08-02T08:53:54.637310+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "728",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/AvalonSemiconductors/ws-submission-2026/",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-15T00:25:57.701263+00:00"
+  },
+  "AS16": {
+   "chip_on_board": false,
+   "description": "A 16-bit RISC CPU designed by Adnan Saad.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "http://github.com/SUD0NET/as16",
+    "repo_commit": "0cfc5a56b99a",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "AS16 CPU",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "7e26e80e28d3b0ae480faeab9cb44c8294cd742dfa43a1a3a55d3ae089f078cb",
+     "output_gds": "33a51ba1b2b71d98cd2cbce75cd175785286e4ce0b6dc879cdee6097f04dc87c",
+     "runs_archive": "3c5ee43288324e3b07e96f94a8573ceb9f7614788277275bf2e7b71d270d0083"
+    },
+    "created_at": "2026-07-14T23:39:35.300795+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:fe44a8d260dc38c54dab80a93f184c35054884fb38b6ade992e9a1e7721e6cd7",
+    "id": "533",
+    "is_manufacturable": true,
+    "precheck_version": "",
+    "status": "finished",
+    "tool_versions": {
+     "precheck": "unknown"
+    }
+   },
+   "repository": "http://github.com/SUD0NET/as16",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-13T08:48:01.740857+00:00"
+  },
+  "BTX1": {
+   "chip_on_board": true,
+   "description": "Path-tracing accelerator chip",
+   "licence": {
+    "declared": "CERN-OHL-S-2.0",
+    "declared_raw": "other",
+    "repo_checked": "",
+    "repo_commit": "",
+    "repo_files": [],
+    "repo_headers": [],
+    "status": "no repository"
+   },
+   "name": "BTX",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "1c98fa67e0427fcf772368456dcd052d5a027556425798ed4ee1c08a08e569c8",
+     "output_gds": "3e931e0d0dd561d9f03c93f55e4569af7c24a2ef58ad529d0a9bad68b6d6e4e0",
+     "runs_archive": "87960fb51b2ae7b655f0542f937f264ec78eeea27068d4721e3d02d3a9c611cf"
+    },
+    "created_at": "2026-08-03T09:40:15.175010+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "791",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-14T11:51:51.721798+00:00"
+  },
+  "CAB1": {
+   "chip_on_board": true,
+   "description": "",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/ZeduloTech/Cabrera",
+    "repo_commit": "2081f9bda695",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Cabrera CoB",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "262cbfb084dbc47b7b0632e31343bc3f9b03c2ef6939a89d597ef7c3b25d4125",
+     "output_gds": "460b282397547267aa506faf6412606701b345035b3da17b319bb20dd03dcd3f",
+     "runs_archive": "2f2e94b989bb1995d25677ff7fe68f2ef257759f9bfa669b802e167d2330772f"
+    },
+    "created_at": "2026-08-02T14:02:58.742313+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "742",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/ZeduloTech/Cabrera",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-15T06:34:22.010409+00:00"
+  },
+  "CAFE": {
+   "chip_on_board": true,
+   "description": "This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. \n\n\nBoth designs have been validated on an FPGA. \n\nThis is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.",
+   "licence": {
+    "declared": "CERN-OHL-S-2.0",
+    "declared_raw": "other",
+    "repo_checked": "https://github.com/Essenceia/Expresso_ASIC_Chip",
+    "repo_commit": "80a20dedd124",
+    "repo_files": [
+     "CERN-OHL-S-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "f0feaacf35874f40e52d170281070030e71c421553ff4ed4bc7f1253a9a7a10d",
+     "output_gds": "ad79e563dbae4aa31f51885d41fd0500bd2a635538c428eb3529aa88416b4d86",
+     "runs_archive": "734a4aefc74d6e775be29b132b1a608dda3ae31c5150ccbb2a7461859a0e3257"
+    },
+    "created_at": "2026-08-02T18:38:02.496738+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "754",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/Essenceia/Expresso_ASIC_Chip",
+   "slot_size": "0p5x0p5",
+   "submitted_at": "2026-07-16T06:00:36.663077+00:00"
+  },
+  "CLON": {
+   "chip_on_board": false,
+   "description": "Cloneless2 is the second tapeout in the Cloneless series of tamper-resistant open-source ASICs.",
+   "licence": {
+    "declared": "GPL-3.0-only",
+    "declared_raw": "other",
+    "repo_checked": "https://github.com/ThorbenMoos/Cloneless2",
+    "repo_commit": "a63883b6fa7b",
+    "repo_files": [
+     "GPL-3.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Cloneless2",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "2599a03ab93e4df4a264cd220b3a753d7ad6953e4b9e906b466e93fd1f00a58b",
+     "output_gds": "2da360b642e4d12e66b8192ebf8c352b862adbf15e5d9f07b0c767337637b9e3",
+     "runs_archive": "082504ff85779a6a6f74e513d2364001bb094e320d94ba67d84f0df7f912e4c4"
+    },
+    "created_at": "2026-08-03T05:54:14.087069+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "784",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/ThorbenMoos/Cloneless2",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-13T22:09:42.961678+00:00"
+  },
+  "DCO0": {
+   "chip_on_board": true,
+   "description": "A tiny Digital Controlled Oscillator + Time-to-Digital Converter comprised entirely in gf180 standard cells",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/asinghani/ws-dco-tdc",
+    "repo_commit": "c5b10fc855d7",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Standard Cell DCO+TDC",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "675b894b9395adb68a19b49d4f9a8ceadb424f8b12ab3ac77633f00fdf765b7e",
+     "output_gds": "1e4c9dc80cc2654fb05401c688a7705944aa0ab0614b1f8ea93ff101a5f83be8",
+     "runs_archive": "73ec53ca23b062ca42fce7e7552cd792aa939effebb1f9766f374f4cf4519de9"
+    },
+    "created_at": "2026-08-03T09:37:25.843233+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "790",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/asinghani/ws-dco-tdc",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-14T12:33:13.789340+00:00"
+  },
+  "DPK1": {
+   "chip_on_board": true,
+   "description": "Dual Core BIO: The Bao I/O Co-processor from baochip-1x with 4Kb of SRAM on gf180 with SPI host.",
+   "licence": {
+    "declared": "CERN-OHL-P-2.0",
+    "declared_raw": "CERN-OHL-P-2.0",
+    "repo_checked": "https://github.com/dpks2003/bio-core",
+    "repo_commit": "0fe3252bd4af",
+    "repo_files": [
+     "CERN-OHL-W-2.0"
+    ],
+    "repo_headers": [],
+    "status": "mismatch"
+   },
+   "name": "bio180",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "7b6c11341505bb2c4ee74422bb4a9c55e4f65a9264d5495877be61775641fb44",
+     "output_gds": "c72c96af396a8b064d44aac847653ed1db127b163275ab539d66e591b8b09c2d",
+     "runs_archive": "d69dc907bc9e8b5a87afe8e047f450273a6a5f42872004b48ecc5678195f074e"
+    },
+    "created_at": "2026-08-03T09:00:37.196387+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "789",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/dpks2003/bio-core",
+   "slot_size": "0p5x1",
+   "submitted_at": "2026-07-14T03:55:49.791941+00:00"
+  },
+  "DPK2": {
+   "chip_on_board": true,
+   "description": "8 ROM-less CORDIC engines , each with its owe SPI-slave interface.  Each core implements a  CORDIC which work on a 16-bit signed fixed-point input Q3.16 (1 sign bit, 3 integer bits, and 12 fraction bits). This engine utilizes SPI-slave interface to receive four 16-bit signed fixed-point inputs (atan\u2080, alpha, x, y) and returns three 16-bit signed fixed-point outputs (alpha, cos\u03b8, sin\u03b8).  With the arctan micro-rotation angles generated on the fly by Taylor-series approximation , no coefficient ROM required.\n\nAFASIK :  Its the only ROM-Less Implementation for CORDIC Algorithm",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/dpks2003/cordic-romless",
+    "repo_commit": "b1fa2b41a1e1",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "cordic-romless-x8",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "bca496e352a6cd572f3edec64568e38c12df527015bc33a87b8798b36a68fd15",
+     "output_gds": "cb0ae7f6006b7527866a82eb317ce5ff258bfbb24b3e5a7e11e1a2d8690b7817",
+     "runs_archive": "73a8acfaf0b2bc22242567dfbb5220b056a50ee3c73ed9ae816a0671b36a0168"
+    },
+    "created_at": "2026-08-02T18:12:41.960061+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "752",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/dpks2003/cordic-romless",
+   "slot_size": "0p5x0p5",
+   "submitted_at": "2026-07-15T08:01:32.116376+00:00"
+  },
+  "EURO": {
+   "chip_on_board": true,
+   "description": "A kitchen-sink synthesizer voice in custom silicon \u2014 a fully digital eurorack synth voice taped out on the open-source GlobalFoundries 180 nm (GF180MCU) PDK with the LibreLane RTL-to-GDSII flow.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/anfroholic/eurosynth",
+    "repo_commit": "606cb4d8cd1e",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "EuroSynth",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "128d1db18e00da3fa129baf60cec0f9072530c7c3064e97122713f646c4ebcab",
+     "output_gds": "2e0ca16366580a2513c158cb5e7c41d12c16734575deef3f73d085b5b52e0b7c",
+     "runs_archive": "4f6fef180df10f113dd6a6099be14338ef46a2ab5946df9e19649aafa1dc682b"
+    },
+    "created_at": "2026-08-02T15:54:14.906177+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "748",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/anfroholic/eurosynth",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-08T11:56:51.178774+00:00"
+  },
+  "FC01": {
+   "chip_on_board": false,
+   "description": "Just some test pads for flip chip bonding trials",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "",
+    "repo_commit": "",
+    "repo_files": [],
+    "repo_headers": [],
+    "status": "no repository"
+   },
+   "name": "Flip Chip pad test version 1",
+   "precheck": null,
+   "repository": "",
+   "slot_size": "0p5x0p5",
+   "submitted_at": ""
+  },
+  "FS01": {
+   "chip_on_board": true,
+   "description": "",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+    "repo_commit": "2ce18dbe27df",
+    "repo_files": [],
+    "repo_headers": [
+     "Apache-2.0"
+    ],
+    "status": "match"
+   },
+   "name": "Test chip with 3.3V SRAM blocks using regular design rules",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "7e884b447bf3a48016c605e0d8635a033f9c7a8aa08bace7c7f0f6c1e8188866",
+     "output_gds": "9ee645dd97da642648e8f30741a1bb4fb014dc59d2f506672090505cfdade38e",
+     "runs_archive": "c47b3d76dab86e10d67bd0797ee7a95c6e338dc116ab5859698258babd94d52a"
+    },
+    "created_at": "2026-08-03T03:26:04.414935+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "778",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+   "slot_size": "0p5x1",
+   "submitted_at": "2026-07-15T16:27:47.395435+00:00"
+  },
+  "FS02": {
+   "chip_on_board": true,
+   "description": "",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+    "repo_commit": "2ce18dbe27df",
+    "repo_files": [],
+    "repo_headers": [
+     "Apache-2.0"
+    ],
+    "status": "match"
+   },
+   "name": "Test chip with 3.3V SRAM blocks using SRAM design rules",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "7e9eb2f2136f5b5eba692294c301fc5469323a3749cf16a9e75c2678a12719bf",
+     "output_gds": "a62348078ac96641c039f5d07e0df17426d4dd4b7a8673f655516a57131cf220",
+     "runs_archive": "a567881e650e5b57ec7cefaaa261a1e2a2ff80470e80ab8248a23f29c4008b9c"
+    },
+    "created_at": "2026-08-03T03:31:27.948658+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "779",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+   "slot_size": "0p5x1",
+   "submitted_at": "2026-07-15T16:28:03.844580+00:00"
+  },
+  "FS03": {
+   "chip_on_board": true,
+   "description": "",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+    "repo_commit": "2ce18dbe27df",
+    "repo_files": [],
+    "repo_headers": [
+     "Apache-2.0"
+    ],
+    "status": "match"
+   },
+   "name": "Test chip with 5V SRAM blocks",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "22d4fc8ec8a9840ca4d658a0215396510bb1a1dd48caec9a119ce6cd5ada8253",
+     "output_gds": "a7c6de35936dc60a4421b19d24b6c6f15274b03d7f30508ea9e19683d64b6d9d",
+     "runs_archive": "07e74082fa774813090772251a30a79f5d3c2cb7e275f8545238643edc18fd4b"
+    },
+    "created_at": "2026-08-03T03:03:43.142067+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "777",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+   "slot_size": "0p5x1",
+   "submitted_at": "2026-07-15T16:27:04.504774+00:00"
+  },
+  "GD04": {
+   "chip_on_board": false,
+   "description": "A Configuration of racquet, a multicore Serv based SoC\n - 9t 5v0 standard cells\n - Difetto to incorporate DFT scan chain into design\n - 6 cores",
+   "licence": {
+    "declared": "BSD-3-Clause",
+    "declared_raw": "BSD-3-Clause",
+    "repo_checked": "https://github.com/gregdavill/gf180mcu-racquet-1x0.5",
+    "repo_commit": "a64a899dabd2",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "mismatch"
+   },
+   "name": "Racquet Wide 1x0.5",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "e631fa66d70df1961a4f4783563e7ee57b826b602b0e04a51a08bdfbf146f2c1",
+     "output_gds": "3fa8774ab2004a50c5778f76bfc98010231bee17ec938de6f81c6006bcab28c6",
+     "runs_archive": "465f0c78bca6e1837f13cfdf62822acebc1f8d3e8ab9181c79421023828c1c09"
+    },
+    "created_at": "2026-08-03T11:38:11.655178+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "794",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/gregdavill/gf180mcu-racquet-1x0.5",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-18T00:27:35.951884+00:00"
+  },
+  "HZ80": {
+   "chip_on_board": false,
+   "description": "Silicon proven, pin compatible, open-source replacement for Zilog Z80 a classic 8-bit CPU.\nhttps://github.com/rejunity/z80-open-silicon",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu",
+    "repo_commit": "56308db64709",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "561e94261198a73e785ad61616c6149d7da785fa1200748fda0cb5afb280ccf7",
+     "output_gds": "95ae5a1998b7e18c28819513726907e2d0e339ca14aad72050f87b343f49cdca",
+     "runs_archive": "e0cd1fb4278c4e5e92c8bcc17bb7036bdba710c6872350599368b514b055acdb"
+    },
+    "created_at": "2026-08-03T12:52:23.952003+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "798",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu",
+   "slot_size": "0p5x1",
+   "submitted_at": "2026-07-18T00:28:16.155788+00:00"
+  },
+  "ISHI": {
+   "chip_on_board": true,
+   "description": "ISHI-KAI's Multiple Projects Wafer for Wafer.Sapce GF180 Run 2.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2",
+    "repo_commit": "1a0be37edb4b",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "32ccc45dbb51c2675481f8385513d278bafd6dab2cd4889cbdb060c5e8a899ab",
+     "output_gds": "fe636badbff6d2b0bb0063b8925a81f8f4eac965b1cba9d4452a1dc32389f933",
+     "runs_archive": "e1704a197b03450b0880fe24896d2bab3652e4ebae70f058a70f98168a32ae6b"
+    },
+    "created_at": "2026-08-02T00:58:30.258269+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "706",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2",
+   "slot_size": "0p5x1",
+   "submitted_at": "2026-07-16T06:59:06.677570+00:00"
+  },
+  "KIAN": {
+   "chip_on_board": true,
+   "description": "KianV SV32 MMU RV32IMA + Zicntr/Zicsr/Zifencei/Sstc Linux/Xv6 SoC, v3.3 standard cells",
+   "licence": {
+    "declared": "MIT",
+    "declared_raw": "MIT",
+    "repo_checked": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32-ws02/",
+    "repo_commit": "0b383ba46257",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "mismatch"
+   },
+   "name": "KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "edf5059d0f72b36492e4a1a1136fc06722be51b2c1081bffb401fd0c4383d6d0",
+     "output_gds": "7fdd74f933b1b903ba323367cce6c640d3d1412c527c348d1a6cad1c8558e2e6",
+     "runs_archive": "6799fcd1d9ac804088af6aacdaaef0e58d0a49dfa95a3a2c01f9a41b2941d579"
+    },
+    "created_at": "2026-08-02T07:27:13.713820+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "726",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32-ws02/",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-14T20:31:33.213985+00:00"
+  },
+  "MEME": {
+   "chip_on_board": false,
+   "description": "Meme chip for marketing and swag",
+   "licence": {
+    "declared": "MIT",
+    "declared_raw": "MIT",
+    "repo_checked": "https://github.com/anfroholic/meme_chip",
+    "repo_commit": "c11dda5b87b4",
+    "repo_files": [
+     "MIT"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Artwork Meme Chip",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "5e8622e41225d705a7d199ecab7d17a95db7686861d27692fb2a7406e24caeb5",
+     "output_gds": "01cef474958a4d1ad2987dbaf673d2d128b48d406808ea8b2aaeb04cf80ac5af",
+     "runs_archive": "e91b20d96812d6d1181a88f5e4eb7d2d6ca1ae340209fabaa9f8c718c0cb5d5e"
+    },
+    "created_at": "2026-08-02T03:33:00.745661+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "712",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/anfroholic/meme_chip",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-14T17:38:21.058200+00:00"
+  },
+  "MOLE": {
+   "chip_on_board": true,
+   "description": "This is an improved version of my FABulous FPGA on wafer.space run 1. Notably, it uses 3.3V standard cells and SRAM macros, as well as 3.3V/5V compatible I/O cells.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/mole99/wsrun2-fabulous-fpga",
+    "repo_commit": "282dda832c62",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "FABulous FPGA",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "011824adf9495535f3cffa41e12a31a9b8ceea3f91e271e42cef8a31a58c3a15",
+     "output_gds": "f1845bac051520d0a34f5835012ff03d3b484a30d7c741a7a77b42298424c7b1",
+     "runs_archive": "872e68de02e21e5c8cb81b89b6b42a8859556f9efec86b9fa34855d552da3fb6"
+    },
+    "created_at": "2026-08-02T06:36:06.036305+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "722",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/mole99/wsrun2-fabulous-fpga",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-14T20:30:33.365525+00:00"
+  },
+  "NAX1": {
+   "chip_on_board": true,
+   "description": "",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/ZeduloTech/Naxos",
+    "repo_commit": "17da59e0f961",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Naxos CoB",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "122bd8333c841887df78f22073fe046056ace6497e95144c737f01e2c392d8d4",
+     "output_gds": "87cbe92fe0c04989ca61483353f0acb86ae440e4f37ae9867e36ff453440de4e",
+     "runs_archive": "beb44e0555ae6780f82876902d9cbb55a1b576d05594391888bc21e6f92cc3e2"
+    },
+    "created_at": "2026-08-02T14:56:26.893847+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "743",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/ZeduloTech/Naxos",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-15T06:33:15.980592+00:00"
+  },
+  "OCD3": {
+   "chip_on_board": true,
+   "description": "A variant of the 3.3V SRAM test chip submitted for the first shuttle run.\nThis one has the new 64 byte SRAM block on it, which was designed to (maybe) fit in a single Tiny Tapeout tile.\nIt also has a new design of a 3.3V power-on-reset (PoR) block.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test",
+    "repo_commit": "6d4f6099546c",
+    "repo_files": [],
+    "repo_headers": [
+     "Apache-2.0"
+    ],
+    "status": "match"
+   },
+   "name": "3.3V SRAM test 2",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "e19f698716b9be4fb17eb3c347e4124f50f560c662358faa06039af0c810c04c",
+     "output_gds": "ade917d96d21487183fe9ab5bac473eb5b4fb32b1c6238f773b9d9714d46a360",
+     "runs_archive": "f8df7111468c2026a87846caeaa033e317b50a688b620d1d0897125ef7643914"
+    },
+    "created_at": "2026-08-02T15:54:04.895904+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "747",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-05T01:33:34.212129+00:00"
+  },
+  "PSOC": {
+   "chip_on_board": false,
+   "description": "Established as a FOSS flow proof of concept for SoC design. Eventually we hope to add wishbone bus and peripherals, open-drain IO for I2C and I2C controller, bandgap reference and voltage regulators, etc.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/d-burnett/picosoc-on-waferspace",
+    "repo_commit": "a5283bc607b0",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Simplest possible PicoSoC implementation using wafer.space flow",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "0c988470aed5aa0e7de829c9cf92de3488e952f701c1042fd18b75e208e566fd",
+     "output_gds": "8ef2d8455ba79b5c042ccedbf5eadb8ab18b3d8261b7b811a988088a7fdb010b",
+     "runs_archive": "68171500bd855ad1a1896a579da728b1ba74de32bc24caa6b0cad9c2b4d6d0d4"
+    },
+    "created_at": "2026-08-03T02:08:19.966599+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "775",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/d-burnett/picosoc-on-waferspace",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-13T16:19:18.478006+00:00"
+  },
+  "QZ80": {
+   "chip_on_board": false,
+   "description": "Silicon proven, pin compatible, open-source replacement for Zilog Z80 a classic 8-bit CPU.\nhttps://github.com/rejunity/z80-open-silicon",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu",
+    "repo_commit": "56308db64709",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot)",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "fbb12b260d9f18ebb2ab6f5c5d445ef1dfb299effceed987a84c3bfaa748b57e",
+     "output_gds": "ca887616acb0dfda22a586debfcb2868feed6694b1af31b672f7c5533fde870d",
+     "runs_archive": "e35acfe8b29943b2174757f4daa015bc8b283e8e4493c22aae4fb8fc41e753ef"
+    },
+    "created_at": "2026-08-03T13:05:54.317241+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "799",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu",
+   "slot_size": "0p5x0p5",
+   "submitted_at": "2026-07-16T17:02:03.404036+00:00"
+  },
+  "RLCM": {
+   "chip_on_board": true,
+   "description": "This TO aims to have a kind of test passives to verify the automated openEMS flow used to simulate passives on GF180MCUD.",
+   "licence": {
+    "declared": "CERN-OHL-P-2.0",
+    "declared_raw": "CERN-OHL-P-2.0",
+    "repo_checked": "https://github.com/EngGhaith/RLCM-Test-Passives-For-GF180MCUD",
+    "repo_commit": "d1bc20b4f854",
+    "repo_files": [],
+    "repo_headers": [],
+    "status": "no licence file"
+   },
+   "name": "RLCM: Test Passives For GF180MCUD",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "bb24c05e419c26730a328ab9765eebea63f336734f32db1ce2555a01a8782997",
+     "output_gds": "aec9076cbcd44f78f9e4d5ecbbfff4dcdd5f5e95a395db350faa8ee287ded6f2",
+     "runs_archive": "ffc13b30575c55d346cf976104e2a03d98ce3d1f0236ae89b12ebe51f9388f0f"
+    },
+    "created_at": "2026-08-03T01:30:04.430657+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "773",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/EngGhaith/RLCM-Test-Passives-For-GF180MCUD",
+   "slot_size": "0p5x1",
+   "submitted_at": "2026-07-15T13:23:12.555211+00:00"
+  },
+  "SALU": {
+   "chip_on_board": true,
+   "description": "A simple ALU design written in Scala through Chisel",
+   "licence": {
+    "declared": "MIT",
+    "declared_raw": "MIT",
+    "repo_checked": "https://github.com/StackDoubleFlow/alu_silicon",
+    "repo_commit": "15ae8bf01675",
+    "repo_files": [
+     "MIT"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Simple ALU",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "408f5f6b4ccda55c6819a0fec2a32812d51e9540ca59e371e9af308f54101378",
+     "output_gds": "95774f2b7586e446b69d0146fb0d01664894462d9c04e75be54e31e63973f477",
+     "runs_archive": "73a39ebe283f6ab04c427b5308ebd992d8ab4c4768ef377b2b9ac4a73794e9d3"
+    },
+    "created_at": "2026-08-02T11:47:32.821201+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "736",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/StackDoubleFlow/alu_silicon",
+   "slot_size": "0p5x0p5",
+   "submitted_at": "2026-07-15T03:10:48.547836+00:00"
+  },
+  "SCML": {
+   "chip_on_board": true,
+   "description": "Always on, low-power, general-purpose, keyword-spotting ASIC",
+   "licence": {
+    "declared": "proprietary",
+    "declared_raw": "proprietary",
+    "repo_checked": "https://github.com/kjconway5/ML-Audio",
+    "repo_commit": "94e7733b0add",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "mismatch"
+   },
+   "name": "ML-Audio SC",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "af1d18e1deebde202f0b793d8b902cb8d6ac5b6cfa7623616d6f28eca63d4491",
+     "output_gds": "148896f2a79728e5be6a49e0173966e98860c15f30c5c93a8b861a465c96b08f",
+     "runs_archive": "d526909e259b889290c13c70314bd8755daa7a02438816f4232b5aef586b3fe2"
+    },
+    "created_at": "2026-08-02T07:26:29.575007+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "723",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/kjconway5/ML-Audio",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-15T03:04:10.920991+00:00"
+  },
+  "SCMT": {
+   "chip_on_board": true,
+   "description": "Programmable event-based machine-vision system. Compatible with EVT2 encoded event stream delivered via SPI type-0 dedicated pins.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/dhgaddy/microTheia",
+    "repo_commit": "ef69ed4d92c4",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "microTheia",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "73643d6377b73f2aacfcaaab9a037d417925a6d668cc2a0d7f9f53d4ab5074d7",
+     "output_gds": "d4739ad663893efa43ddf57b7c2a53d4bbbf8fd6be475fd81254444335273aa3",
+     "runs_archive": "3b84f9ef6049d37f0944d40d2e46eb5244cdf5c090faeecf3662cf0b632c28a6"
+    },
+    "created_at": "2026-08-02T15:35:12.823434+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "745",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/dhgaddy/microTheia",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-15T05:55:08.672196+00:00"
+  },
+  "SCTP": {
+   "chip_on_board": true,
+   "description": "",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/SlugTPU/gf180mcu-slugtpu",
+    "repo_commit": "e906c153f878",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "SlugTPU",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "1e26794ed02f71c48bf9bc7d6d184fd460208950c090ce5c7b043d18ba2faebe",
+     "output_gds": "8577fe86c530b3ee5cf116278ff60e4333b2bfc3fa4aac713479b54f567b3ca0",
+     "runs_archive": "bcd9a82eea00bd89499c1abd4ececc07a377eec34269c7f4f788653897a70fa2"
+    },
+    "created_at": "2026-08-02T11:08:24.043596+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "735",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/SlugTPU/gf180mcu-slugtpu",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-15T05:13:30.434548+00:00"
+  },
+  "SCUP": {
+   "chip_on_board": true,
+   "description": "This open-source chip demonstrates an RMII Ethernet MAC, an SDcard reader, an SDRAM controller, and several different configurations of PLLs.",
+   "licence": {
+    "declared": "GPL-3.0-or-later",
+    "declared_raw": "other",
+    "repo_checked": "https://github.com/sifferman/gf180mcu-peripherals",
+    "repo_commit": "bee7cb698112",
+    "repo_files": [
+     "GPL-3.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "GF180MCU Peripherals",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "5b5fbb48ccdf084a501517df22a3ecb000b3b5385e1975504d41526c46982bfd",
+     "output_gds": "5d7c4c3e5b7af46319e09411faa69757efdcea7b52653e0d8e102a7489d35d03",
+     "runs_archive": "9a016e0347a564dfb9ac421b4312e0bceae56503bd1d7ffe141ec1d913e4ecb7"
+    },
+    "created_at": "2026-08-03T04:51:37.109292+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "783",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/sifferman/gf180mcu-peripherals",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-13T02:38:27.733320+00:00"
+  },
+  "T0P3": {
+   "chip_on_board": false,
+   "description": "Experimental Tiny Tapeout shuttle with Analog design support",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/TinyTapeout/tinytapeout-gf-0p3",
+    "repo_commit": "16c30128215e",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Tiny Tapeout GF 0p3",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "6936dd28d99a6a6221fd7f990e9eead106985ef83c3a386a0bfa5e6d95e4bae6",
+     "output_gds": "da186a238bbedbba3d1471c54dd6bbfc7d8b2862d2dce9fd0d0cc9704579e399",
+     "runs_archive": "f41525bc94b0a59866305ef2ca6e1f07a28e9535aa150f8dfc13d7881c8a27b6"
+    },
+    "created_at": "2026-08-02T13:59:08.475032+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "741",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/TinyTapeout/tinytapeout-gf-0p3",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-04T13:50:34.093444+00:00"
+  },
+  "T26A": {
+   "chip_on_board": false,
+   "description": "",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/TinyTapeout/tinytapeout-gf-26a",
+    "repo_commit": "35e70261e686",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Tiny Tapeout GF 26a",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "4ed830774897ccf12070cd8ba65c2a8fd93fc74683e4a0110ee3a308f4e2e644",
+     "output_gds": "f1fe03275b513c8c364625db540fda359057c4a9c2cb5283a3f92d5913c27005",
+     "runs_archive": "d16da372948a523c3c210caf70fc827c8635f16db765e2cf4ec0adc0252ba5b5"
+    },
+    "created_at": "2026-08-02T12:52:21.441699+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "739",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/TinyTapeout/tinytapeout-gf-26a",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-04T09:44:00.976279+00:00"
+  },
+  "T26B": {
+   "chip_on_board": false,
+   "description": "",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/TinyTapeout/tinytapeout-gf-26b",
+    "repo_commit": "8c92b24e237f",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Tiny Tapeout GF 26b",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "ca343f08bf61281c4259b61e6848245ff8ee8736c35693c3895cc44b38eb4303",
+     "output_gds": "8e74d7f09232998da14468dbadb1608be1dcd44f160ac8d42f847d772f120883",
+     "runs_archive": "e096f721011c0cc8f5369d824b3bc060a4b3412f65bd9abfe42c0d9a627ee2eb"
+    },
+    "created_at": "2026-08-02T13:00:32.269747+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "740",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/TinyTapeout/tinytapeout-gf-26b",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-04T13:23:26.975562+00:00"
+  },
+  "TQVA": {
+   "chip_on_board": false,
+   "description": "A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a quarter sized slot.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/MichaelBell/ws01-tinyQV",
+    "repo_commit": "2c8630bce07f",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "TinyQV - Crowdsourced Risc-V SoC",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "da71c6c90b932e397369a6e24cae4e11e6969d322450a12bdfa784020399b2c9",
+     "output_gds": "7b296cbd5bc12146e06b90b69a699d6d8ed192bbd11d7611169032b9edf70cee",
+     "runs_archive": "a2eb1813f0ebb09d60eacb1efb731e73ddf2cbd0f164f1c6c7a4454b85e392ce"
+    },
+    "created_at": "2026-08-03T12:46:34.012323+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "797",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/MichaelBell/ws01-tinyQV",
+   "slot_size": "0p5x0p5",
+   "submitted_at": "2026-07-18T00:27:51.538024+00:00"
+  },
+  "TQVC": {
+   "chip_on_board": false,
+   "description": "A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a half height slot (but is otherwise identical to the quarter size version)",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/MichaelBell/ws01-tinyQV",
+    "repo_commit": "2c8630bce07f",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "TinyQV - Crowdsourced Risc-V SoC (1x0.5)",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "4d32955188ced8169b0a67774986698e12a77893ef13d176a1d761e52925e0f1",
+     "output_gds": "91e1d0ca36b092672c864f8257369fad88b417ec2060dcf3c26cbff10bd4f0e7",
+     "runs_archive": "a581c1467ff4ae04d52b01f0c537822665542a6dad6e8a89a0995c9cb3787811"
+    },
+    "created_at": "2026-08-03T12:02:21.650132+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "795",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/MichaelBell/ws01-tinyQV",
+   "slot_size": "1x0p5",
+   "submitted_at": "2026-07-18T00:27:08.414822+00:00"
+  },
+  "TQVD": {
+   "chip_on_board": true,
+   "description": "This version of TinyQV uses the new 3v3 standard cell library, 3v3 SRAM macros and the split voltage pads.  Apart from that it is similar to the Run 1 TinyQV, but with additional scratch RAM, new HDMI/VGA text mode output support and a single 8-bit DAC.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/MichaelBell/ws02-tinyQV",
+    "repo_commit": "1ac951fb0fd3",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "TinyQV - RISC-V SoC with HDMI output",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "c722d7067d70a1ba4122b1005a4adc0ca8cab16ce299f3da9cf01b72da20867d",
+     "output_gds": "f4ab93b2b79917afe4ad833e81918b9659b0d11873c9f3e682e26fa4e656e0df",
+     "runs_archive": "af39f1d939a3658482af96253e95817d8ea8d1b05e585ad9d89e2d3103004b80"
+    },
+    "created_at": "2026-08-02T05:32:30.383545+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "720",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/MichaelBell/ws02-tinyQV",
+   "slot_size": "0p5x0p5",
+   "submitted_at": "2026-07-14T20:49:32.924214+00:00"
+  },
+  "TQVE": {
+   "chip_on_board": false,
+   "description": "This version of TinyQV uses the new 3v3 standard cell library, 3v3 SRAM macros and a single line of pads to allow more area with fewer pins.  The extra space is used for 9.5kB of scratch RAM.  It also has a USB CDC peripheral which should allow serial comms without an external UART.",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "",
+    "repo_commit": "",
+    "repo_files": [],
+    "repo_headers": [],
+    "status": "no repository"
+   },
+   "name": "TinyQV - RISC-V SoC with experimental pad setup",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "bf94470bd6263b3be2ebe66b1e5cd0805a2162e38637d15895a8129a25e37a5b",
+     "output_gds": "67b553d085bad20db1898fc5458e8875a7f82d59a7b519e3bcb8e71c247302e5",
+     "runs_archive": "e2cf1acf64856afd64baf75528bf99cc1f75bd02aabc6fd74dc9423b4316a1be"
+    },
+    "created_at": "2026-08-02T03:48:31.372978+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "713",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "",
+   "slot_size": "0p5x0p5",
+   "submitted_at": "2026-07-14T19:00:08.213115+00:00"
+  },
+  "WSLG": {
+   "chip_on_board": false,
+   "description": "Die with a big wafer.space logo on it!",
+   "licence": {
+    "declared": "Apache-2.0",
+    "declared_raw": "Apache-2.0",
+    "repo_checked": "https://github.com/89Mods/ws-logo-die",
+    "repo_commit": "02d2ff4e3768",
+    "repo_files": [
+     "Apache-2.0"
+    ],
+    "repo_headers": [],
+    "status": "match"
+   },
+   "name": "Wafer.Space Logo",
+   "precheck": {
+    "artefact_sha256": {
+     "log_file": "5936bb9e135dfd754e49e1435242622c565a630a738e24f9edca45b2922e518b",
+     "output_gds": "d437837bf44854c2b59aa8c0891d8a8fcb710d3f382ec9fe8da9130604590a8d",
+     "runs_archive": "148ab6ed14854497f7b57362c04ebd2c8f1e1fa1eb5ede347ed90a803acf64f2"
+    },
+    "created_at": "2026-08-03T12:16:05.815116+00:00",
+    "docker_exit_code": 0,
+    "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+    "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+    "id": "796",
+    "is_manufacturable": true,
+    "precheck_version": "1.7.3",
+    "status": "finished",
+    "tool_versions": {
+     "nix-eda": "6.24.0 @ ebee72ea7826"
+    }
+   },
+   "repository": "https://github.com/89Mods/ws-logo-die",
+   "slot_size": "1x1",
+   "submitted_at": "2026-07-18T00:27:21.448233+00:00"
+  }
+ },
+ "run": "ws-run2"
+}
