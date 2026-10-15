@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This report analyzes the standard cell and SRAM density achieved by the 40 unique public chip designs on the [wafer.space](https://wafer.space/) GF180MCU Run 2 reticle. The reticle has 54 slots; the public layout contains 43 slot placements (some designs appear more than once, and private designs are not included).
+This report analyzes the standard cell and SRAM density achieved by the 40 unique public chip designs on the wafer.space GF180MCU Run 2 reticle. The reticle has 54 slots; the public layout contains 43 slot placements (some designs appear more than once, and private designs are not included).
 
 All designs were fabricated on GlobalFoundries' GF180MCU process, a 180-nanometer (0.18um) technology node. This is a mature, relatively large-geometry process — for comparison, modern smartphone chips use 3nm or 5nm processes with features roughly 50x smaller.
 
@@ -415,10 +415,6 @@ Detection uses the open GF180MCU layers: a transistor is gate polysilicon (30/0)
 - **Peak figures** are the densest 1mm x 1mm square anywhere inside each die, found by sliding the square in 100um steps over the die and skipping positions that touch an SRAM macro. Logic cells are placed by their origin and transistors by the centre of their gate.
 - **SRAM macros** are counted by cell name. The `sram_block_count` column of the summary CSV is kept for comparison with earlier results; it counts SramCore marker shapes, of which each GF180MCU macro has two.
 - Designs placed more than once on the reticle are counted once.
-
-### Difference from the March 2026 Run 1 report
-
-The first version of the Run 1 report measured cell width and row height from each cell's overall bounding box. That box includes n-well and implant shapes which deliberately overhang the cell and overlap its neighbours, so it is larger than the area a placed cell occupies: 4.22 x 4.78um instead of 3.36 x 3.92um for a 7-track buffer. Theoretical maximum densities in that version were therefore about 35% too low, and every "% of max" figure correspondingly too high. This report uses the placement boundary. It also reported SRAM "blocks" by counting SramCore marker shapes, which gave twice the number of macros. Logic cell counts, transistor counts and achieved densities are unchanged.
 
 ---
 
