@@ -30,7 +30,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=db3df63e66">
 </head>
 <body>
   <div class="content-wrapper">
@@ -52,7 +52,7 @@
               </div>
             </li>
             <li class="nav-item d-none d-lg-block">
-              <button id="runThemeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
+              <button type="button" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
                 aria-label="Switch between light and dark mode"><i class="icofont-moon"></i></button>
             </li>
             <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
@@ -138,10 +138,10 @@
           <tbody>
             <tr><th>Licence</th><td>Apache-2.0 <span class="text-muted">declared</span>
 <br><span class="text-muted">No public repository</span></td></tr>
-            <tr><th>Chip-on-board</th><td>Not selected
+            <tr><th>Chip-on-board</th><td>Not selected at submission
 </td></tr>
             <tr><th>Precheck</th><td>Passed
-              <span class="text-muted">on 2026-08-02,
+              <span class="text-muted">latest platform check, 2026-08-02,
                 gf180mcu-precheck 1.7.3</span>
 </td></tr>
           </tbody>
@@ -249,10 +249,10 @@
         <svg class="run-heatmap" viewBox="0 0 1.94 2.53" role="img"
              aria-label="Logic cells per square millimetre across the die">
           <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.698"><title>7,485 logic cells, 147,180 transistors, 4% SRAM</title></rect>
-<text x="0.500" y="2.030" class="light">7k</text>          <rect x="1.000" y="1.530" width="0.936" height="1.000" style="fill-opacity: 0.212"><title>1,672 logic cells, 249,382 transistors, 62% SRAM</title></rect>
-<text x="1.468" y="2.030" class="">2k</text>          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>11,034 logic cells, 175,113 transistors, 2% SRAM</title></rect>
-<text x="0.500" y="1.030" class="light">11k</text>          <rect x="1.000" y="0.530" width="0.936" height="1.000" style="fill-opacity: 0.406"><title>3,798 logic cells, 266,632 transistors, 54% SRAM</title></rect>
-<text x="1.468" y="1.030" class="">4k</text>          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.081"><title>130 logic cells, 79,322 transistors, 38% SRAM</title></rect>
+          <rect x="1.000" y="1.530" width="0.936" height="1.000" style="fill-opacity: 0.212"><title>1,672 logic cells, 249,382 transistors, 62% SRAM</title></rect>
+          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>11,034 logic cells, 175,113 transistors, 2% SRAM</title></rect>
+          <rect x="1.000" y="0.530" width="0.936" height="1.000" style="fill-opacity: 0.406"><title>3,798 logic cells, 266,632 transistors, 54% SRAM</title></rect>
+          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.081"><title>130 logic cells, 79,322 transistors, 38% SRAM</title></rect>
           <rect x="1.000" y="-0.001" width="0.936" height="0.531" style="fill-opacity: 0.076"><title>94 logic cells, 77,019 transistors, 31% SRAM</title></rect>
           <rect class="sram-macro" x="0.755" y="0.093" width="0.301" height="0.516"><title>gf180mcu_ocd_ip_sram__sram1024x8m8wm1</title></rect>
           <rect class="sram-macro" x="0.930" y="1.922" width="0.301" height="0.516"><title>gf180mcu_ocd_ip_sram__sram1024x8m8wm1</title></rect>
@@ -265,6 +265,10 @@
           <rect class="sram-macro" x="1.325" y="1.827" width="0.516" height="0.301"><title>gf180mcu_ocd_ip_sram__sram1024x8m8wm1</title></rect>
           <rect class="sram-macro" x="1.325" y="1.517" width="0.516" height="0.301"><title>gf180mcu_ocd_ip_sram__sram1024x8m8wm1</title></rect>
           <rect class="window" x="0.300" y="0.730" width="1" height="1"><title>Densest SRAM-free mm²: 15,896 logic cells</title></rect>
+          <text x="0.500" y="2.030" class="light">7k</text>
+          <text x="1.468" y="2.030" class="">2k</text>
+          <text x="0.500" y="1.030" class="light">11k</text>
+          <text x="1.468" y="1.030" class="">4k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
           macros; the bold outline is the densest 1 mm² that avoids them, found by sliding a
@@ -325,6 +329,6 @@
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js"></script>
+  <script src="../run.js?v=db3df63e66"></script>
 </body>
 </html>

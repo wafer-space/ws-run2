@@ -30,7 +30,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=db3df63e66">
 </head>
 <body>
   <div class="content-wrapper">
@@ -52,7 +52,7 @@
               </div>
             </li>
             <li class="nav-item d-none d-lg-block">
-              <button id="runThemeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
+              <button type="button" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
                 aria-label="Switch between light and dark mode"><i class="icofont-moon"></i></button>
             </li>
             <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
@@ -143,7 +143,7 @@
             <tr><th>Chip-on-board</th><td>Selected at submission
 </td></tr>
             <tr><th>Precheck</th><td>Passed
-              <span class="text-muted">on 2026-07-15</span>
+              <span class="text-muted">latest platform check, 2026-07-15</span>
 </td></tr>
           </tbody>
         </table>
@@ -240,18 +240,26 @@
         <svg class="run-heatmap" viewBox="0 0 3.93 2.53" role="img"
              aria-label="Logic cells per square millimetre across the die">
           <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.064"><title>49 logic cells, 74,273 transistors</title></rect>
-<text x="0.500" y="2.030" class="">&lt;1k</text>          <rect x="1.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.353"><title>3,348 logic cells, 139,189 transistors</title></rect>
-<text x="1.500" y="2.030" class="">3k</text>          <rect x="2.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.557"><title>5,676 logic cells, 150,247 transistors</title></rect>
-<text x="2.500" y="2.030" class="">6k</text>          <rect x="3.000" y="1.530" width="0.932" height="1.000" style="fill-opacity: 0.103"><title>455 logic cells, 68,040 transistors</title></rect>
-<text x="3.466" y="2.030" class="">&lt;1k</text>          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.060"><title>1 logic cells, 126,854 transistors</title></rect>
-<text x="0.500" y="1.030" class="">&lt;1k</text>          <rect x="1.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.903"><title>9,632 logic cells, 252,705 transistors</title></rect>
-<text x="1.500" y="1.030" class="light">10k</text>          <rect x="2.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>10,745 logic cells, 256,266 transistors</title></rect>
-<text x="2.500" y="1.030" class="light">11k</text>          <rect x="3.000" y="0.530" width="0.932" height="1.000" style="fill-opacity: 0.219"><title>1,691 logic cells, 118,137 transistors</title></rect>
-<text x="3.466" y="1.030" class="">2k</text>          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.060"><title>0 logic cells, 14,576 transistors</title></rect>
+          <rect x="1.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.353"><title>3,348 logic cells, 139,189 transistors</title></rect>
+          <rect x="2.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.557"><title>5,676 logic cells, 150,247 transistors</title></rect>
+          <rect x="3.000" y="1.530" width="0.932" height="1.000" style="fill-opacity: 0.103"><title>455 logic cells, 68,040 transistors</title></rect>
+          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.060"><title>1 logic cells, 126,854 transistors</title></rect>
+          <rect x="1.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.903"><title>9,632 logic cells, 252,705 transistors</title></rect>
+          <rect x="2.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>10,745 logic cells, 256,266 transistors</title></rect>
+          <rect x="3.000" y="0.530" width="0.932" height="1.000" style="fill-opacity: 0.219"><title>1,691 logic cells, 118,137 transistors</title></rect>
+          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.060"><title>0 logic cells, 14,576 transistors</title></rect>
           <rect x="1.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.060"><title>1 logic cells, 23,171 transistors</title></rect>
           <rect x="2.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.061"><title>6 logic cells, 23,199 transistors</title></rect>
           <rect x="3.000" y="-0.001" width="0.932" height="0.531" style="fill-opacity: 0.061"><title>4 logic cells, 13,087 transistors</title></rect>
           <rect class="window" x="1.400" y="0.830" width="1" height="1"><title>Densest SRAM-free mm²: 18,587 logic cells</title></rect>
+          <text x="0.500" y="2.030" class="">&lt;1k</text>
+          <text x="1.500" y="2.030" class="">3k</text>
+          <text x="2.500" y="2.030" class="">6k</text>
+          <text x="3.466" y="2.030" class="">&lt;1k</text>
+          <text x="0.500" y="1.030" class="">&lt;1k</text>
+          <text x="1.500" y="1.030" class="light">10k</text>
+          <text x="2.500" y="1.030" class="light">11k</text>
+          <text x="3.466" y="1.030" class="">2k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
           macros; the bold outline is the densest 1 mm² that avoids them, found by sliding a
@@ -312,6 +320,6 @@
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js"></script>
+  <script src="../run.js?v=db3df63e66"></script>
 </body>
 </html>

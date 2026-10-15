@@ -40,7 +40,7 @@ This is the default 0.5x0.5 slot size for this project and is also the version t
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=db3df63e66">
 </head>
 <body>
   <div class="content-wrapper">
@@ -62,7 +62,7 @@ This is the default 0.5x0.5 slot size for this project and is also the version t
               </div>
             </li>
             <li class="nav-item d-none d-lg-block">
-              <button id="runThemeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
+              <button type="button" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
                 aria-label="Switch between light and dark mode"><i class="icofont-moon"></i></button>
             </li>
             <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
@@ -153,7 +153,7 @@ This is the default 0.5x0.5 slot size for this project and is also the version t
             <tr><th>Chip-on-board</th><td>Selected at submission
 </td></tr>
             <tr><th>Precheck</th><td>Passed
-              <span class="text-muted">on 2026-08-02,
+              <span class="text-muted">latest platform check, 2026-08-02,
                 gf180mcu-precheck 1.7.3</span>
 </td></tr>
           </tbody>
@@ -251,12 +251,16 @@ This is the default 0.5x0.5 slot size for this project and is also the version t
         <svg class="run-heatmap" viewBox="0 0 1.94 2.53" role="img"
              aria-label="Logic cells per square millimetre across the die">
           <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.063"><title>14 logic cells, 74,404 transistors</title></rect>
-<text x="0.500" y="2.030" class="">&lt;1k</text>          <rect x="1.000" y="1.530" width="0.936" height="1.000" style="fill-opacity: 0.294"><title>1,025 logic cells, 70,340 transistors</title></rect>
-<text x="1.468" y="2.030" class="">1k</text>          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.813"><title>3,517 logic cells, 139,008 transistors</title></rect>
-<text x="0.500" y="1.030" class="light">4k</text>          <rect x="1.000" y="0.530" width="0.936" height="1.000" style="fill-opacity: 1.000"><title>4,109 logic cells, 130,469 transistors</title></rect>
-<text x="1.468" y="1.030" class="light">4k</text>          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.090"><title>74 logic cells, 14,979 transistors</title></rect>
+          <rect x="1.000" y="1.530" width="0.936" height="1.000" style="fill-opacity: 0.294"><title>1,025 logic cells, 70,340 transistors</title></rect>
+          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.813"><title>3,517 logic cells, 139,008 transistors</title></rect>
+          <rect x="1.000" y="0.530" width="0.936" height="1.000" style="fill-opacity: 1.000"><title>4,109 logic cells, 130,469 transistors</title></rect>
+          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.090"><title>74 logic cells, 14,979 transistors</title></rect>
           <rect x="1.000" y="-0.001" width="0.936" height="0.531" style="fill-opacity: 0.063"><title>8 logic cells, 13,621 transistors</title></rect>
           <rect class="window" x="0.500" y="0.630" width="1" height="1"><title>Densest SRAM-free mm²: 7,693 logic cells</title></rect>
+          <text x="0.500" y="2.030" class="">&lt;1k</text>
+          <text x="1.468" y="2.030" class="">1k</text>
+          <text x="0.500" y="1.030" class="light">4k</text>
+          <text x="1.468" y="1.030" class="light">4k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
           macros; the bold outline is the densest 1 mm² that avoids them, found by sliding a
@@ -317,6 +321,6 @@ This is the default 0.5x0.5 slot size for this project and is also the version t
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js"></script>
+  <script src="../run.js?v=db3df63e66"></script>
 </body>
 </html>
