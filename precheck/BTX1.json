@@ -1,0 +1,203 @@
+{
+ "run": "ws-run2",
+ "shuttle": "G802",
+ "code": "BTX1",
+ "role": "latest",
+ "check": {
+  "id": "791",
+  "created_at": "2026-08-03T09:40:15.175010+00:00",
+  "trigger": "drc_update",
+  "is_manufacturable": true,
+  "precheck_version": "1.7.3",
+  "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+  "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
+  "runs_archive_sha256": "87960fb51b2ae7b655f0542f937f264ec78eeea27068d4721e3d02d3a9c611cf"
+ },
+ "chip_on_board": true,
+ "pad_mask_check": "passed",
+ "flow_complete": true,
+ "final_metrics": {
+  "klayout__density_error__count": 0,
+  "klayout__zero_area_polygons__count": 0,
+  "klayout__antenna_error__count": 0,
+  "magic__drc_error__count": 0,
+  "klayout__drc_error__count": 0
+ },
+ "warnings": [],
+ "errors": [],
+ "step_order": [
+  "KLayout.ReadLayout",
+  "KLayout.CheckTopLevel",
+  "KLayout.CheckSize",
+  "KLayout.CheckPadMask",
+  "KLayout.GenerateID",
+  "KLayout.Render",
+  "KLayout.Density",
+  "Checker.KLayoutDensity",
+  "KLayout.ZeroAreaPolygons",
+  "Checker.KLayoutZeroAreaPolygons",
+  "KLayout.Antenna",
+  "Checker.KLayoutAntenna",
+  "Magic.DRC",
+  "Checker.MagicDRC",
+  "KLayout.DRC",
+  "Checker.KLayoutDRC",
+  "KLayout.WriteLayout"
+ ],
+ "steps": [
+  {
+   "id": "KLayout.ReadLayout",
+   "result": "passed",
+   "runtime": "00:00:04.059",
+   "metrics": {},
+   "messages": [
+    "SHA256 for /input/design.gds: 4ba65ff9480027278317e6655e60b00977449b4f6ada168f2772c42d246f5da1"
+   ]
+  },
+  {
+   "id": "KLayout.CheckTopLevel",
+   "result": "passed",
+   "runtime": "00:00:02.615",
+   "metrics": {},
+   "messages": []
+  },
+  {
+   "id": "KLayout.CheckSize",
+   "result": "passed",
+   "runtime": "00:00:03.117",
+   "metrics": {},
+   "messages": []
+  },
+  {
+   "id": "KLayout.CheckPadMask",
+   "result": "passed",
+   "runtime": "00:00:03.719",
+   "metrics": {},
+   "messages": [
+    "Running KLayout pad mask check\u2026"
+   ]
+  },
+  {
+   "id": "KLayout.GenerateID",
+   "result": "passed",
+   "runtime": "00:00:05.529",
+   "metrics": {},
+   "messages": []
+  },
+  {
+   "id": "KLayout.Render",
+   "result": "passed",
+   "runtime": "00:00:09.139",
+   "metrics": {},
+   "messages": []
+  },
+  {
+   "id": "KLayout.Density",
+   "result": "passed",
+   "runtime": "00:09:22.406",
+   "metrics": {
+    "klayout__density_error__count": 0
+   },
+   "messages": [
+    "Running KLayout density check with 20 threads\u2026"
+   ]
+  },
+  {
+   "id": "Checker.KLayoutDensity",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for KLayout density errors clear."
+   ]
+  },
+  {
+   "id": "KLayout.ZeroAreaPolygons",
+   "result": "passed",
+   "runtime": "00:00:26.994",
+   "metrics": {
+    "klayout__zero_area_polygons__count": 0
+   },
+   "messages": [
+    "Running KLayout zero area polygons check\u2026"
+   ]
+  },
+  {
+   "id": "Checker.KLayoutZeroAreaPolygons",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for KLayout zero area polygons count clear."
+   ]
+  },
+  {
+   "id": "KLayout.Antenna",
+   "result": "passed",
+   "runtime": "00:14:46.642",
+   "metrics": {
+    "klayout__antenna_error__count": 0
+   },
+   "messages": [
+    "Running KLayout antenna check\u2026"
+   ]
+  },
+  {
+   "id": "Checker.KLayoutAntenna",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for KLayout antenna errors clear."
+   ]
+  },
+  {
+   "id": "Magic.DRC",
+   "result": "passed",
+   "runtime": "00:25:19.316",
+   "metrics": {
+    "magic__drc_error__count": 0
+   },
+   "messages": []
+  },
+  {
+   "id": "Checker.MagicDRC",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for Magic DRC errors clear."
+   ]
+  },
+  {
+   "id": "KLayout.DRC",
+   "result": "passed",
+   "runtime": "00:59:10.217",
+   "metrics": {
+    "klayout__drc_error__count": 0
+   },
+   "messages": [
+    "Running KLayout DRC with 1 threads\u2026"
+   ]
+  },
+  {
+   "id": "Checker.KLayoutDRC",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for KLayout DRC errors clear."
+   ]
+  },
+  {
+   "id": "KLayout.WriteLayout",
+   "result": "passed",
+   "runtime": "00:00:03.922",
+   "metrics": {},
+   "messages": [
+    "Saving views to '/workspace/runs/RUN_2026-08-03_09-41-21/final'\u2026",
+    "Flow complete."
+   ]
+  }
+ ]
+}
