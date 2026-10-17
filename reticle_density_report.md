@@ -289,6 +289,7 @@ Which transistor voltages and optional devices of the GF180MCU process the 40 de
 | MIM capacitors | 7 of 40 | [0000](https://wafer.space/ws-run2/projects/0000.html), [AS04](https://wafer.space/ws-run2/projects/AS04.html), [CAB1](https://wafer.space/ws-run2/projects/CAB1.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [NAX1](https://wafer.space/ws-run2/projects/NAX1.html), [OCD3](https://wafer.space/ws-run2/projects/OCD3.html), [RLCM](https://wafer.space/ws-run2/projects/RLCM.html) |
 | Unsalicided poly resistors | 6 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html), [CAB1](https://wafer.space/ws-run2/projects/CAB1.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [MEME](https://wafer.space/ws-run2/projects/MEME.html), [NAX1](https://wafer.space/ws-run2/projects/NAX1.html), [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) |
 | MOS capacitors | 3 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) |
+| Diodes (DIODE_MK) | 3 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) |
 | Deep N-well | 3 of 40 | [0000](https://wafer.space/ws-run2/projects/0000.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) |
 | Salicided poly resistors | 1 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html) |
 | Diffusion resistors | 1 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html) |
@@ -296,6 +297,9 @@ Which transistor voltages and optional devices of the GF180MCU process the 40 de
 | Schottky diodes | 1 of 40 | [0000](https://wafer.space/ws-run2/projects/0000.html) |
 | Native transistors | 0 of 40 | — |
 | 10 V LDMOS | 0 of 40 | — |
+| N-well resistors | 0 of 40 | — |
+| Metal resistors | 0 of 40 | — |
+| Well diodes | 0 of 40 | — |
 | Zener diodes | 0 of 40 | — |
 | eFuses | 0 of 40 | — |
 | One-time programmable memory | 0 of 40 | — |
@@ -303,12 +307,12 @@ Which transistor voltages and optional devices of the GF180MCU process the 40 de
 
 | Design | Voltages | Custom transistors 3.3 / 5 / 6 V | Devices drawn | I/O library |
 |---|---|---|---|---|
-| [0000](https://wafer.space/ws-run2/projects/0000.html) | 3.3 V, 5 V, 6 V | 24 / 16 / 96 | MIM capacitors (Metal4), Deep N-well, Schottky diodes | fd_io |
+| [0000](https://wafer.space/ws-run2/projects/0000.html) | 3.3 V, 5 V, 6 V | 24 / 16 / 96 | MIM capacitors (Metal4-Metal5), Deep N-well, Schottky diodes | fd_io |
 | [AMM1](https://wafer.space/ws-run2/projects/AMM1.html) | 5 V | 0 / 0 / 0 | — | fd_io |
-| [AS04](https://wafer.space/ws-run2/projects/AS04.html) | 3.3 V | 192 / 0 / 0 | MIM capacitors (Metal4), MOS capacitors, High-resistance poly resistors, Unsalicided poly resistors, Salicided poly resistors, Diffusion resistors | ocd_io |
+| [AS04](https://wafer.space/ws-run2/projects/AS04.html) | 3.3 V | 192 / 0 / 0 | MIM capacitors (Metal4-Metal5), MOS capacitors (only in apad), High-resistance poly resistors, Unsalicided poly resistors, Salicided poly resistors, Diffusion resistors, Diodes (DIODE_MK) (only in apad) | ocd_io |
 | [AS16](https://wafer.space/ws-run2/projects/AS16.html) | 5 V | 0 / 0 / 0 | — | fd_io |
 | [BTX1](https://wafer.space/ws-run2/projects/BTX1.html) | 3.3 V | 0 / 0 / 0 | — | fd_io |
-| [CAB1](https://wafer.space/ws-run2/projects/CAB1.html) | 3.3 V, 5 V, 6 V | 40 / 104 / 44 | MIM capacitors (Metal2, Metal4), High-resistance poly resistors, Unsalicided poly resistors | fd_io |
+| [CAB1](https://wafer.space/ws-run2/projects/CAB1.html) | 3.3 V, 5 V, 6 V | 40 / 104 / 44 | MIM capacitors (Metal4-Metal5; only in simple_por), High-resistance poly resistors (only in simple_por), Unsalicided poly resistors | fd_io |
 | [CAFE](https://wafer.space/ws-run2/projects/CAFE.html) | 5 V | 0 / 0 / 0 | — | fd_io |
 | [CLON](https://wafer.space/ws-run2/projects/CLON.html) | 5 V | 0 / 0 / 0 | — | fd_io |
 | [DCO0](https://wafer.space/ws-run2/projects/DCO0.html) | 5 V | 0 / 0 / 0 | — | fd_io |
@@ -321,15 +325,15 @@ Which transistor voltages and optional devices of the GF180MCU process the 40 de
 | [FS03](https://wafer.space/ws-run2/projects/FS03.html) | 5 V | 0 / 323,352 / 0 | — | fd_io |
 | [GD04](https://wafer.space/ws-run2/projects/GD04.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [HZ80](https://wafer.space/ws-run2/projects/HZ80.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [ISHI](https://wafer.space/ws-run2/projects/ISHI.html) | 3.3 V, 5 V, 6 V | 9,268 / 4,589 / 90 | MIM capacitors (Metal4), MOS capacitors, High-resistance poly resistors, Unsalicided poly resistors, Deep N-well | fd_io |
+| [ISHI](https://wafer.space/ws-run2/projects/ISHI.html) | 3.3 V, 5 V, 6 V | 9,268 / 4,589 / 90 | MIM capacitors (Metal4-Metal5), MOS capacitors (only in fill10_supplyVDD), High-resistance poly resistors, Unsalicided poly resistors, Diodes (DIODE_MK), Deep N-well | fd_io |
 | [KIAN](https://wafer.space/ws-run2/projects/KIAN.html) | 3.3 V | 0 / 0 / 0 | — | ocd_io |
 | [MEME](https://wafer.space/ws-run2/projects/MEME.html) | 5 V | 0 / 0 / 0 | Unsalicided poly resistors | fd_io |
 | [MOLE](https://wafer.space/ws-run2/projects/MOLE.html) | 3.3 V | 0 / 0 / 0 | — | ocd_io |
-| [NAX1](https://wafer.space/ws-run2/projects/NAX1.html) | 3.3 V, 5 V, 6 V | 2 / 0 / 44 | MIM capacitors (Metal4), High-resistance poly resistors, Unsalicided poly resistors | fd_io |
-| [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) | 3.3 V | 177 / 0 / 0 | MIM capacitors (Metal2, Metal4), High-resistance poly resistors | ocd_io |
+| [NAX1](https://wafer.space/ws-run2/projects/NAX1.html) | 3.3 V, 5 V, 6 V | 2 / 0 / 44 | MIM capacitors (Metal4-Metal5; only in simple_por), High-resistance poly resistors (only in simple_por), Unsalicided poly resistors | fd_io |
+| [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) | 3.3 V | 177 / 0 / 0 | MIM capacitors (Metal4-Metal5), High-resistance poly resistors, Diodes (DIODE_MK) | ocd_io |
 | [PSOC](https://wafer.space/ws-run2/projects/PSOC.html) | 5 V | 0 / 0 / 0 | — | fd_io |
 | [QZ80](https://wafer.space/ws-run2/projects/QZ80.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [RLCM](https://wafer.space/ws-run2/projects/RLCM.html) | — | 0 / 0 / 0 | MIM capacitors (Metal4) | — |
+| [RLCM](https://wafer.space/ws-run2/projects/RLCM.html) | — | 0 / 0 / 0 | MIM capacitors (Metal4-Metal5) | — |
 | [SALU](https://wafer.space/ws-run2/projects/SALU.html) | 5 V | 0 / 0 / 0 | — | fd_io |
 | [SCML](https://wafer.space/ws-run2/projects/SCML.html) | 3.3 V | 0 / 0 / 0 | — | fd_io |
 | [SCMT](https://wafer.space/ws-run2/projects/SCMT.html) | 3.3 V | 0 / 0 / 0 | — | fd_io |
@@ -340,7 +344,7 @@ Which transistor voltages and optional devices of the GF180MCU process the 40 de
 | [T26B](https://wafer.space/ws-run2/projects/T26B.html) | 3.3 V, 5 V | 38,977 / 7,382 / 0 | — | ocd_io |
 | [TQVA](https://wafer.space/ws-run2/projects/TQVA.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [TQVC](https://wafer.space/ws-run2/projects/TQVC.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [TQVD](https://wafer.space/ws-run2/projects/TQVD.html) | 3.3 V | 0 / 0 / 0 | High-resistance poly resistors | ocd_io |
+| [TQVD](https://wafer.space/ws-run2/projects/TQVD.html) | 3.3 V | 0 / 0 / 0 | High-resistance poly resistors (only in r2r) | ocd_io |
 | [TQVE](https://wafer.space/ws-run2/projects/TQVE.html) | 3.3 V | 0 / 0 / 0 | — | fd_io |
 | [WSLG](https://wafer.space/ws-run2/projects/WSLG.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 
