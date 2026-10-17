@@ -608,7 +608,7 @@
      "nix-eda": "6.24.0 @ ebee72ea7826"
     }
    },
-   "repository": "https://github.com/AvalonSemiconductors/ws-submission-2026/",
+   "repository": "https://github.com/AvalonSemiconductors/ws-submission-2026",
    "slot_size": "1x1",
    "submitted_at": "2026-07-15T00:25:57.701263+00:00"
   },
@@ -811,7 +811,7 @@
      "precheck": "unknown"
     }
    },
-   "repository": "http://github.com/SUD0NET/as16",
+   "repository": "https://github.com/SUD0NET/as16",
    "slot_size": "1x0p5",
    "submitted_at": "2026-07-13T08:48:01.740857+00:00"
   },
@@ -3909,7 +3909,7 @@
      "nix-eda": "6.24.0 @ ebee72ea7826"
     }
    },
-   "repository": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32-ws02/",
+   "repository": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32-ws02",
    "slot_size": "1x1",
    "submitted_at": "2026-07-14T20:31:33.213985+00:00"
   },
