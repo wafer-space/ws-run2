@@ -39,7 +39,7 @@ It also has a new design of a 3.3V power-on-reset (PoR) block.">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=5a9bb072ca">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=587cf594be">
 </head>
 <body>
   <div class="content-wrapper">
@@ -163,9 +163,14 @@ It also has a new design of a 3.3V power-on-reset (PoR) block.">
           <tbody>
             <tr><th>3.3 V</th><td>AS 7t-3.3V standard cells, ocd SRAM, 177 custom transistors</td></tr>
             <tr><th>MIM capacitors</th><td>40
-              <span class="text-muted">(4,000 µm², on Metal2, Metal4)</span></td></tr>
+              <span class="text-muted">(4,000 µm², between Metal4 and Metal5)</span>
+</td></tr>
             <tr><th>High-resistance poly resistors</th><td>200
-              <span class="text-muted">(5,000 µm²)</span></td></tr>
+              <span class="text-muted">(5,000 µm²)</span>
+</td></tr>
+            <tr><th>Diodes (DIODE_MK)</th><td>1
+              <span class="text-muted">(0 µm²)</span>
+</td></tr>
             <tr><th>I/O library</th><td><a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_io/blob/main/docs/datasheet.rst"><span class="run-mono">gf180mcu_ocd_io</span></a> <span class="text-muted">(758 cells)</span></td></tr>
           </tbody>
         </table>
@@ -384,6 +389,6 @@ It also has a new design of a 3.3V power-on-reset (PoR) block.">
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=5a9bb072ca"></script>
+  <script src="../run.js?v=587cf594be"></script>
 </body>
 </html>
