@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=4bf7182d8c">
+  <link rel="stylesheet" type="text/css" href="run.css?v=fb778b648c">
 </head>
 <body>
   <div class="content-wrapper">
@@ -268,6 +268,7 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
         <table class="table table-sm run-table bg-white mb-30">
           <tbody>
 <tr><td>1 × 1</td><td class="text-end">13</td></tr><tr><td>1 × ½</td><td class="text-end">15</td></tr><tr><td>½ × 1</td><td class="text-end">7</td></tr><tr><td>½ × ½</td><td class="text-end">8</td></tr>          </tbody>
+          <tfoot><tr><th>Total</th><th class="text-end">43</th></tr></tfoot>
         </table>
         <h2 id="status" class="section-title mb-20">Shuttle status<a class="run-anchor" href="#status" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h2>
         <ul class="run-timeline">
@@ -1030,6 +1031,26 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
 <p class="small text-muted mb-0">Not drawn by any design: <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_05.html">Native transistors</a>, <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_12_1.html">10 V LDMOS</a>, <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_4.html">N-well resistors</a>, <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_4.html">Metal resistors</a>, <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_3.html">Well diodes</a>, <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html">Zener diodes</a>, <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_11.html">eFuses</a>, <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_10.html">One-time programmable memory</a>, <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html">Inductors</a>.</p>        <p class="small text-muted">Only devices outside standard cells, SRAM macros and I/O pads count, since every
           die has those. A single test structure counts the same as a large block.          <span class="run-mono run-ip-only">Faded</span> codes have the device only inside a reused block; hover
           over one to see which.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mb-30">
+        <h3 id="oxides" class="mb-10">Gate oxides<a class="run-anchor" href="#oxides" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+          <table class="table table-sm run-table bg-white mb-10">
+            <thead><tr><th>Transistors</th><th class="text-end">Own design</th><th class="text-end">With the pad ring</th><th>Which (own design)</th></tr></thead>
+            <tbody>
+              <tr><td class="text-nowrap">3.3 V and 5 V/6 V</td>
+                <td class="text-end">9</td><td class="text-end">20</td>                <td><a class="run-mono" href="projects/0000.html">0000</a> <a class="run-mono" href="projects/CAB1.html">CAB1</a> <a class="run-mono" href="projects/FS01.html">FS01</a> <a class="run-mono" href="projects/FS02.html">FS02</a> <a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/NAX1.html">NAX1</a> <a class="run-mono" href="projects/T0P3.html">T0P3</a> <a class="run-mono" href="projects/T26A.html">T26A</a> <a class="run-mono" href="projects/T26B.html">T26B</a></td></tr>
+              <tr><td class="text-nowrap">3.3 V only</td>
+                <td class="text-end">11</td><td class="text-end">0</td>                <td><a class="run-mono" href="projects/AS04.html">AS04</a> <a class="run-mono" href="projects/BTX1.html">BTX1</a> <a class="run-mono" href="projects/KIAN.html">KIAN</a> <a class="run-mono" href="projects/MOLE.html">MOLE</a> <a class="run-mono" href="projects/OCD3.html">OCD3</a> <a class="run-mono" href="projects/SCML.html">SCML</a> <a class="run-mono" href="projects/SCMT.html">SCMT</a> <a class="run-mono" href="projects/SCTP.html">SCTP</a> <a class="run-mono" href="projects/SCUP.html">SCUP</a> <a class="run-mono" href="projects/TQVD.html">TQVD</a> <a class="run-mono" href="projects/TQVE.html">TQVE</a></td></tr>
+              <tr><td class="text-nowrap">5 V/6 V only</td>
+                <td class="text-end">18</td><td class="text-end">18</td>                <td><a class="run-mono" href="projects/AMM1.html">AMM1</a> <a class="run-mono" href="projects/AS16.html">AS16</a> <a class="run-mono" href="projects/CAFE.html">CAFE</a> <a class="run-mono" href="projects/CLON.html">CLON</a> <a class="run-mono" href="projects/DCO0.html">DCO0</a> <a class="run-mono" href="projects/DPK1.html">DPK1</a> <a class="run-mono" href="projects/DPK2.html">DPK2</a> <a class="run-mono" href="projects/EURO.html">EURO</a> <a class="run-mono" href="projects/FS03.html">FS03</a> <a class="run-mono" href="projects/GD04.html">GD04</a> <a class="run-mono" href="projects/HZ80.html">HZ80</a> <a class="run-mono" href="projects/MEME.html">MEME</a> <a class="run-mono" href="projects/PSOC.html">PSOC</a> <a class="run-mono" href="projects/QZ80.html">QZ80</a> <a class="run-mono" href="projects/SALU.html">SALU</a> <a class="run-mono" href="projects/TQVA.html">TQVA</a> <a class="run-mono" href="projects/TQVC.html">TQVC</a> <a class="run-mono" href="projects/WSLG.html">WSLG</a></td></tr>
+            </tbody>
+          </table>
+          <p class="small text-muted">3.3 V transistors have the thin gate oxide; 5 V and 6 V ones share the thick one.
+"Own design" counts the standard cells, SRAM and transistors the designer chose; "with the pad ring" adds
+            the transistors of the I/O pad cells, measured in each design's pad ring. No transistors of their
+            own: <a class="run-mono" href="projects/FC01.html">FC01</a>, <a class="run-mono" href="projects/RLCM.html">RLCM</a>.</p>
       </div>
     </div>
     <div class="row gutter-50">
@@ -2366,6 +2387,6 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=4bf7182d8c"></script>
+  <script src="run.js?v=fb778b648c"></script>
 </body>
 </html>
