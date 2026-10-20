@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=70a2ddb2a6">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=9fd13fffae">
 </head>
 <body>
   <div class="content-wrapper">
@@ -128,22 +128,22 @@
         <table class="table table-sm run-table run-facts">
           <tbody>
             <tr><th>Core average<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>18k
-              <span class="text-muted">(23% of buffer maximum)</span></td></tr>
+<span class="text-muted">(23% of buffer maximum)</span></td></tr>
             <tr><th>Densest mm²<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>25k
-              <span class="text-muted">(33% of buffer maximum)</span></td></tr>
+<span class="text-muted">(33% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>42%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>283k average,
               322k in the densest mm²</td></tr>
           </tbody>
         </table>
-        <p class="small text-muted mb-0">Every figure here is measured from the public reticle layout, the same way
-          for every design on the run: see <a href="../index.html#data">data and method</a>, and
-          <a href="../index.html#features">how the run's designs used the process</a>.</p>
+        <p class="small text-muted mb-0">Every figure here is measured from the public layout, the same way for every
+          design on the run: see <a href="../index.html#data">data and method</a>, and
+          <a href="../index.html#features">how its designs used the process</a>.</p>
       </div>
 
       <div class="col-lg-5">
         <div class="run-description"><p class="lead">Path-tracing accelerator chip</p></div>
-        <p>
+        <p class="run-design-links">
         </p>
         <table class="table table-sm run-table run-facts">
           <tbody>
@@ -204,7 +204,8 @@
             <tr><th>Libraries</th><td>
               <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a> <span class="text-muted">(253k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>19 macros,
+            <tr><th>SRAM</th><td>19
+              macros,
               71,680 bits</td></tr>
           </tbody>
         </table>
@@ -233,6 +234,7 @@
     <div class="row gutter-50">
       <div class="col-lg-7 mb-30">
         <h3 id="area" class="mb-10">Where the area went<a class="run-anchor" href="#area" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+        <p class="small text-muted mb-10">How this design's area splits between working logic, memory, filler and the pad ring.</p>
         <div class="run-bar run-bar-large mb-10">
           <div style="width: 30.06%; background: #5ca7db"
                title="Logic cells: 6.05 mm²">
@@ -264,35 +266,37 @@
         </ul>
 
         <h3 id="cells" class="mt-30 mb-10">Most used cells<a class="run-anchor" href="#cells" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+        <p class="small text-muted mb-10">The ten standard cells this design uses most.</p>
         <div class="table-responsive">
         <table class="table table-sm run-table bg-white">
-          <thead><tr><th>Cell</th><th>Library</th><th class="text-end">Instances</th><th>What it does</th></tr></thead>
+          <thead><tr><th>Cell</th><th class="d-none d-sm-table-cell">Library</th><th class="text-end">Instances</th><th>What it does</th></tr></thead>
           <tbody>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand2_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">24,679</td><td class="text-muted">2-input NAND gate (2x drive)</td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">23,530</td><td class="text-muted">Buffer (2x drive)</td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">xnor2_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">xnor2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">22,907</td><td class="text-muted">2-input XNOR gate (2x drive)</td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">oai21_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">oai21_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">17,858</td><td class="text-muted">OR-AND-Invert compound gate (2x drive)</td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">ao22_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">14,584</td><td class="text-muted"></td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">aoi21_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">ao22_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+              <td class="text-end">14,584</td><td class="text-muted">AND-OR compound gate (2x2 inputs) (2x drive)</td></tr>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">aoi21_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">13,437</td><td class="text-muted">AND-OR-Invert compound gate (2x drive)</td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand3_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand3_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">11,727</td><td class="text-muted">3-input NAND gate (2x drive)</td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">and2_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">and2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">11,261</td><td class="text-muted">2-input AND gate (2x drive)</td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">xor2_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">xor2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">10,008</td><td class="text-muted">2-input XOR gate (2x drive)</td></tr>
-            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">9,378</td><td class="text-muted">D flip-flop (1 bit storage) (2x drive)</td></tr>
           </tbody>
         </table>
         </div>
 
         <h3 id="sram" class="mt-30 mb-10">SRAM macros<a class="run-anchor" href="#sram" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+        <p class="small text-muted mb-10">The ready-made memory blocks this design uses.</p>
         <div class="table-responsive">
         <table class="table table-sm run-table bg-white">
           <thead><tr><th>Macro</th><th class="text-end">Count</th><th class="text-end">Bits each</th></tr></thead>
@@ -492,15 +496,16 @@
                 <li><a href="../index.html">Run overview</a></li>
                 <li><a href="https://github.com/wafer-space/ws-run2">Layout and manifest on GitHub</a></li>
                 <li><a href="https://github.com/wafer-space/ws-run2/blob/density-report/reticle_density_report.md">Density report</a></li>
-<li><a href="https://www.crowdsupply.com/wafer-space/gf180mcu-run-2">Campaign page</a></li>              </ul>
+<li><a href="https://www.crowdsupply.com/wafer-space/gf180mcu-run-2">The run on Crowd Supply</a></li>              </ul>
             </div>
           </div>
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
               <p class="small mb-0">Generated on 2026-10-20 by
-                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
-                layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a>. Sizes, cells and
+                transistors are measured from the public layout; dates come from the published schedules. The data
+                files are linked from the overview.</p>
             </div>
           </div>
         </div>
@@ -515,6 +520,6 @@
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=70a2ddb2a6"></script>
+  <script src="../run.js?v=9fd13fffae"></script>
 </body>
 </html>
