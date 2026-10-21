@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e922b8f332">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
 </head>
 <body>
   <div class="content-wrapper">
@@ -127,10 +127,12 @@
         <h4 id="density" class="mb-10">Logic density<a class="run-anchor" href="#density" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h4>
         <table class="table table-sm run-table run-facts">
           <tbody>
-            <tr><th>Core average<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>3k
-<span class="text-muted">(4% of buffer maximum)</span></td></tr>
-            <tr><th>Core covered by logic</th><td>6%</td></tr>
-            <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>207k average</td></tr>
+            <tr><th>Inside the core<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>4k
+<span class="text-muted">(5% of buffer maximum)</span><br><span class="small text-muted">over the 12.92 mm² core: what the design itself packed</span></td></tr>
+            <tr><th>Inside the seal ring<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>2k
+              <br><span class="small text-muted">over all 19.65 mm² of the slot, pad ring included</span></td></tr>
+            <tr><th>Core covered by logic</th><td>7%</td></tr>
+            <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>228k average</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run2">public layout</a>, the same way for every
@@ -147,8 +149,11 @@
           <tbody>
             <tr><th>Die</th><td>3.93 × 5.12 mm
               (20.1 mm²)</td></tr>
-            <tr><th>Core area</th><td>14.3 mm² inside the pad ring</td></tr>
-            <tr><th>Placements</th><td>1 on the reticle, in
+            <tr><th>Core area</th><td>12.92 mm² inside the pad ring
+              <br><span class="small text-muted">the design's CORE_AREA, from
+                <a href="https://github.com/dhgaddy/microTheia/blob/ef69ed4d92c4/librelane/slots/slot_1x1.yaml"><span class="run-mono">librelane/slots/slot_1x1.yaml</span></a></span></td></tr>
+<tr><th>Inside the seal ring</th><td>19.65 mm²
+              <span class="text-muted">(the die less its 26 µm seal ring)</span></td></tr>            <tr><th>Placements</th><td>1 on the reticle, in
               slot <a class="run-mono" href="../index.html#reticle">B4</a>              <a class="run-minimap" href="../index.html#reticle" aria-label="Where SCMT sits on the reticle">
                 <svg viewBox="0 0 30.00 23.38" role="img"><title>SCMT on the reticle</title>
 <rect class="" x="0.060" y="18.197"
@@ -214,9 +219,13 @@
             <tr><th>Licence</th><td><a href="https://github.com/dhgaddy/microTheia/blob/ef69ed4d92c4/LICENSE">Apache-2.0</a> <span class="text-muted">declared</span>
 <br><span class="text-muted">Repository: <a href="https://github.com/dhgaddy/microTheia/blob/ef69ed4d92c4/LICENSE">Apache-2.0</a> <span class="small">in <span class="run-mono">LICENSE</span></span>
  — agrees</span>
-<br><span class="small text-muted">Repository checked at <a href="https://github.com/dhgaddy/microTheia/commit/ef69ed4d92c4"><span class="run-mono">ef69ed4d92c4</span></a></span></td></tr>
-            <tr><th>Template</th><td><a href="https://github.com/wafer-space/gf180mcu-project-template">wafer-space/gf180mcu-project-template</a> <a href="https://github.com/wafer-space/gf180mcu-project-template/tree/1.5.8">1.5.8</a>              <br><span class="small text-muted">the release whose Makefile pins the same PDK
-              (PDK_COMMIT <a href="https://github.com/fossi-foundation/open-pdks/tree/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7"><span class="run-mono">f6eeac7dad08</span></a>) at the commit checked</span></td></tr>
+</td></tr>
+            <tr><th>Template</th><td><a href="https://github.com/wafer-space/gf180mcu-project-template">wafer-space/gf180mcu-project-template</a> <a href="https://github.com/wafer-space/gf180mcu-project-template/tree/1.5.8">1.5.8</a></td></tr>
+            <tr><th>How it was checked</th><td><details class="run-more run-more-inline"><summary>Commit and PDK pin</summary>
+The licence and template were read from the repository at commit
+              <a href="https://github.com/dhgaddy/microTheia/commit/ef69ed4d92c4"><span class="run-mono">ef69ed4d92c4</span></a>.The template release
+              named above is the one whose Makefile pins the same PDK as that
+              commit (PDK_COMMIT <a href="https://github.com/fossi-foundation/open-pdks/tree/f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7"><span class="run-mono">f6eeac7dad08</span></a>).</details></td></tr>
             <tr><th>Chip-on-board</th><td>Selected at submission
 </td></tr>
             <tr><th>Precheck</th><td>Passed
@@ -236,7 +245,7 @@
     <div class="row gutter-50">
       <div class="col-lg-7 mb-30">
         <h3 id="area" class="mb-10">Where the area went<a class="run-anchor" href="#area" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
-        <p class="small text-muted mb-10">How this design's area splits between working logic, memory, filler and the pad ring.</p>
+        <p class="small text-muted mb-10">How this design's area splits between logic cells, SRAM, filler and tap cells, other and pad ring.</p>
         <div class="run-bar run-bar-large mb-10">
           <div style="width: 4.60%; background: #5ca7db"
                title="Logic cells: 0.93 mm²">
@@ -247,12 +256,12 @@
           <div style="width: 28.30%; background: #b9c7d6"
                title="Filler and tap cells: 5.69 mm²">
 <span>28%</span>          </div>
-          <div style="width: 10.30%; background: #e6ebf0"
-               title="Other: 2.07 mm²">
-<span>10%</span>          </div>
-          <div style="width: 29.05%; background: #f0b84c"
-               title="Pad ring: 5.84 mm²">
-<span>29%</span>          </div>
+          <div style="width: 3.55%; background: #e6ebf0"
+               title="Other: 0.71 mm²">
+          </div>
+          <div style="width: 35.80%; background: #f0b84c"
+               title="Pad ring: 7.20 mm²">
+<span>36%</span>          </div>
         </div>
         <ul class="run-legend">
           <li><i style="background: #5ca7db"></i><strong>Logic cells</strong>
@@ -262,9 +271,9 @@
           <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong>
             5.69 mm² <span class="text-muted">(28%)</span></li>
           <li><i style="background: #e6ebf0"></i><strong>Other</strong>
-            2.07 mm² <span class="text-muted">(10%)</span></li>
+            0.71 mm² <span class="text-muted">(4%)</span></li>
           <li><i style="background: #f0b84c"></i><strong>Pad ring</strong>
-            5.84 mm² <span class="text-muted">(29%)</span></li>
+            7.20 mm² <span class="text-muted">(36%)</span></li>
         </ul>
 
         <h3 id="cells" class="mt-30 mb-10">Most used cells<a class="run-anchor" href="#cells" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
@@ -381,29 +390,50 @@
           <rect class="sram-macro" x="2.000" y="3.104" width="0.301" height="0.516"><title>gf180mcu_ocd_ip_sram__sram1024x8m8wm1</title></rect>
           <rect class="sram-macro" x="2.550" y="3.395" width="0.301" height="0.225"><title>gf180mcu_ocd_ip_sram__sram256x8m8wm1</title></rect>
           <rect class="sram-macro" x="2.010" y="4.134" width="0.516" height="0.301"><title>gf180mcu_ocd_ip_sram__sram1024x8m8wm1</title></rect>
-          <text x="0.500" y="4.620" class="">&lt;1k</text>
-          <text x="1.500" y="4.620" class="">&lt;1k</text>
-          <text x="2.500" y="4.620" class="">&lt;1k</text>
-          <text x="3.466" y="4.620" class="">&lt;1k</text>
-          <text x="0.500" y="3.620" class="">0</text>
-          <text x="1.500" y="3.620" class="">3k</text>
-          <text x="2.500" y="3.620" class="">2k</text>
-          <text x="3.466" y="3.620" class="">&lt;1k</text>
-          <text x="0.500" y="2.620" class="">&lt;1k</text>
-          <text x="1.500" y="2.620" class="light">10k</text>
-          <text x="2.500" y="2.620" class="light">15k</text>
-          <text x="3.466" y="2.620" class="">&lt;1k</text>
-          <text x="0.500" y="1.620" class="">&lt;1k</text>
-          <text x="1.500" y="1.620" class="light">9k</text>
-          <text x="2.500" y="1.620" class="">8k</text>
-          <text x="3.466" y="1.620" class="">&lt;1k</text>
-          <text x="0.500" y="0.620" class="">&lt;1k</text>
-          <text x="1.500" y="0.620" class="">&lt;1k</text>
-          <text x="2.500" y="0.620" class="">&lt;1k</text>
-          <text x="3.466" y="0.620" class="">&lt;1k</text>
+          <text x="0.500" y="4.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="1.500" y="4.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="2.500" y="4.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="3.466" y="4.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="0.500" y="3.620" class=""
+                style="font-size: 0.220px">0</text>
+          <text x="1.500" y="3.620" class=""
+                style="font-size: 0.220px">3k</text>
+          <text x="2.500" y="3.620" class=""
+                style="font-size: 0.220px">2k</text>
+          <text x="3.466" y="3.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="0.500" y="2.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="1.500" y="2.620" class="light"
+                style="font-size: 0.220px">10k</text>
+          <text x="2.500" y="2.620" class="light"
+                style="font-size: 0.220px">15k</text>
+          <text x="3.466" y="2.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="0.500" y="1.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="1.500" y="1.620" class="light"
+                style="font-size: 0.220px">9k</text>
+          <text x="2.500" y="1.620" class=""
+                style="font-size: 0.220px">8k</text>
+          <text x="3.466" y="1.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="0.500" y="0.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="1.500" y="0.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="2.500" y="0.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="3.466" y="0.620" class=""
+                style="font-size: 0.220px">&lt;1k</text>
         </svg>
-        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
-          macros. Edge squares are smaller than 1 mm².</p>
+        <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
+          die. Hatched
+          outlines are SRAM macros. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
   </div>
@@ -543,6 +573,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e922b8f332"></script>
+  <script src="../run.js?v=e990a249d3"></script>
 </body>
 </html>
