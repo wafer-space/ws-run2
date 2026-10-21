@@ -100,8 +100,8 @@ The following tables show the average logic standard cell density for each desig
 | [QZ80](https://wafer.space/ws-run2/projects/QZ80.html) | [9t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html) | 3k | 5% | 10% | 5k | 0 | [FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 sl…](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) |
 | [DCO0](https://wafer.space/ws-run2/projects/DCO0.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 1k | 2% | 6% | 7k | 0 | [Standard Cell DCO+TDC](https://github.com/asinghani/ws-dco-tdc) |
 | [HZ80](https://wafer.space/ws-run2/projects/HZ80.html) | [9t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html) | 1k | 2% | 4% | 5k | 0 | [FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) |
-| [WSLG](https://wafer.space/ws-run2/projects/WSLG.html) | mixed | 1k | 1% | 4% | 14k | 0 | [Wafer.Space Logo](https://github.com/89Mods/ws-logo-die) |
-| [AS16](https://wafer.space/ws-run2/projects/AS16.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 1k | 1% | 4% | 6k | 2 | [CPU](https://github.com/SUD0NET/as16) |
+| [WSLG](https://wafer.space/ws-run2/projects/WSLG.html) | mixed | 1k | 1% | 4% | 14k | 0 | [wafer.space Logo](https://github.com/89Mods/ws-logo-die) |
+| [AS16](https://wafer.space/ws-run2/projects/AS16.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 1k | 1% | 4% | 6k | 2 | [16-bit RISC CPU](https://github.com/SUD0NET/as16) |
 | [SALU](https://wafer.space/ws-run2/projects/SALU.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 1k | 1% | 3% | 2k | 0 | [Simple ALU](https://github.com/StackDoubleFlow/alu_silicon) |
 | [FS03](https://wafer.space/ws-run2/projects/FS03.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 1k | 1% | 2% | 4k | 0 | [Test chip with 5V SRAM blocks](https://gitlab.com/Chips4Makers/arrakeen-sram-testchip) |
 | [FS01](https://wafer.space/ws-run2/projects/FS01.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 1k | 1% | 2% | 4k | 0 | [Test chip with 3.3V SRAM blocks using regular design rules](https://gitlab.com/Chips4Makers/arrakeen-sram-testchip) |
@@ -115,7 +115,7 @@ These designs contain fewer than 1,000 logic standard cells:
 |---|---|---|---|---|---|
 | [0000](https://wafer.space/ws-run2/projects/0000.html) | 40 | 21k | 0 | 72 | [ICELab Test Chip](https://github.com/GTIceLab/ASHES-GF180nm) |
 | [FC01](https://wafer.space/ws-run2/projects/FC01.html) | 0 | 0 | 0 | 12 | Flip Chip pad test version 1 |
-| [ISHI](https://wafer.space/ws-run2/projects/ISHI.html) | 0 | 44k | 0 | 72 + 63 probe | [ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2) |
+| [ISHI](https://wafer.space/ws-run2/projects/ISHI.html) | 0 | 44k | 0 | 72 + 63 probe | [ISHI-KAI multi-project die 2](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2) |
 | [MEME](https://wafer.space/ws-run2/projects/MEME.html) | 226 | 171k | 0 | 72 | [Artwork Meme Chip](https://github.com/anfroholic/meme_chip) |
 | [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) | 123 | 158k | 4 | 72 | [3.3V SRAM test 2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) |
 | [RLCM](https://wafer.space/ws-run2/projects/RLCM.html) | 0 | 0 | 0 | 246 | [RLCM: Test Passives For GF180MCUD](https://github.com/EngGhaith/RLCM-Test-Passives-For-GF180MCUD) |
@@ -203,7 +203,7 @@ SRAM (Static Random-Access Memory) blocks are pre-designed memory macros. Unlike
 | [GD04](https://wafer.space/ws-run2/projects/GD04.html) | 6 | 24,576 | 1.26 mm² (25% of core) | 36k | [Racquet Wide 1x0.5](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) |
 | [TQVD](https://wafer.space/ws-run2/projects/TQVD.html) | 5 | 32,768 | 0.66 mm² (38% of core) | 24k | [TinyQV - RISC-V SoC with HDMI output](https://github.com/MichaelBell/ws02-tinyQV) |
 | [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) | 4 | 14,848 | 0.37 mm² (7% of core) | 123 | [3.3V SRAM test 2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) |
-| [AS16](https://wafer.space/ws-run2/projects/AS16.html) | 2 | 8,192 | 0.42 mm² (8% of core) | 6k | [CPU](https://github.com/SUD0NET/as16) |
+| [AS16](https://wafer.space/ws-run2/projects/AS16.html) | 2 | 8,192 | 0.42 mm² (8% of core) | 6k | [16-bit RISC CPU](https://github.com/SUD0NET/as16) |
 | [T26A](https://wafer.space/ws-run2/projects/T26A.html) | 2 | 2,048 | 0.23 mm² (2% of core) | 144k | [Tiny Tapeout GF 26a](https://github.com/TinyTapeout/tinytapeout-gf-26a) |
 | [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) | 1 | 2,048 | 0.07 mm² (1% of core) | 119k | [Tiny Tapeout GF 0.3](https://github.com/TinyTapeout/tinytapeout-gf-0p3) |
 | [TQVA](https://wafer.space/ws-run2/projects/TQVA.html) | 1 | 4,096 | 0.21 mm² (12% of core) | 36k | [TinyQV - Crowdsourced RISC-V SoC](https://github.com/MichaelBell/ws01-tinyQV) |
