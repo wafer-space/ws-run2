@@ -53,7 +53,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -103,7 +103,7 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">wafer.space Run 2</a></p>
     <h1 class="page-title">Multi-Project die using 3.3V SCL</h1>
-    <p class="lead"><span class="run-code-inline">AS04</span> · Multi-project die · 1 × 1 slot</p>
+    <p class="lead"><span class="run-code-inline">AS04</span> · Multi-project die · <span class="run-nowrap">1 × 1 slot</span></p>
   </div>
 </div>
 
@@ -142,7 +142,7 @@
 <span class="text-muted">(25% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>18%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>136k average,
-              263k in the densest mm² of logic</td></tr>
+              263k in the mm² with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run2">public layout</a>, the same way for every
@@ -151,7 +151,7 @@
       </div>
 
       <div class="col-lg-5">
-        <div class="run-description"><p class="lead">Contains:</p><p>- 6502/6510/PLA replicas</p><p>- SID replicas</p><p>- rv32ima_zicsr_smnmi core</p><p>- Retro DRAM controller</p><p>- GPIO chip</p><p>- NTSC Test signal generator</p><p>- FM Synth</p><p>- Digital-to-Analog converters</p><p>- Two layouts generated using [FeatherLane](https://codeberg.org/TholinVali/FeatherLane)</p></div>
+        <div class="run-description"><p class="lead">Contains:</p><p>- 6502/6510/PLA replicas</p><p>- SID replicas</p><p>- rv32ima_zicsr_smnmi core</p><p>- Retro DRAM controller</p><p>- GPIO chip</p><p>- NTSC Test signal generator</p><p>- FM Synth</p><p>- Digital-to-Analog converters</p><p>- Two layouts generated using [FeatherLane](<a href="https://codeberg.org/TholinVali/FeatherLane">https://codeberg.org/TholinVali/FeatherLane</a>)</p></div>
         <p class="run-design-links">
           <a class="btn btn-s mb-10 me-10" href="https://github.com/AvalonSemiconductors/ws-submission-2026">Source repository</a>
         </p>
@@ -217,7 +217,7 @@
             <tr><th>Libraries</th><td>
               <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a> <span class="text-muted">(87k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -327,9 +327,9 @@ The licence and template were read from the repository at commit
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">and2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">6,981</td><td class="text-muted">2-input AND gate (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">4,901</td><td class="text-muted">D flip-flop (1 bit storage) (2x drive)</td></tr>
+              <td class="text-end">4,901</td><td class="text-muted">D flip-flop (1 bit storage, 2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">ao22_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">4,472</td><td class="text-muted">AND-OR compound gate (2x2 inputs) (2x drive)</td></tr>
+              <td class="text-end">4,472</td><td class="text-muted">AND-OR compound gate (2x2 inputs, 2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">xnor2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">4,381</td><td class="text-muted">2-input XNOR gate (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
@@ -415,11 +415,13 @@ The licence and template were read from the repository at commit
                 style="font-size: 0.220px">2k</text>
           <text x="3.466" y="0.620" class=""
                 style="font-size: 0.220px">&lt;1k</text>
+          <text x="1.100" y="1.455" class="window-label"
+                style="font-size: 0.220px">19k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
-          1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -447,7 +449,7 @@ The licence and template were read from the repository at commit
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span>
-        <span class="run-history-step run-history-current"><strong>AS04 AS04 Multi-Project die using 3.3V SCL</strong> <span class="text-muted">— 1 × 1 slot, the multi-project die again, on 3.3 V standard cells</span></span>
+        <span class="run-history-step run-history-current"><strong>AS04 Multi-Project die using 3.3V SCL</strong> <span class="text-muted">— 1 × 1 slot, the multi-project die again, on 3.3 V standard cells</span></span>
       </li>
     </ol>
     <p class="small text-muted mb-20 run-history-key"><span class="run-history-key-tt">Tiny Tapeout tile</span>
@@ -596,6 +598,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>

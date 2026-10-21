@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,7 +85,7 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">wafer.space Run 2</a></p>
     <h1 class="page-title">BTX</h1>
-    <p class="lead"><span class="run-code-inline">BTX1</span> · Accelerators · 1 × 1 slot</p>
+    <p class="lead"><span class="run-code-inline">BTX1</span> · Accelerators · <span class="run-nowrap">1 × 1 slot</span></p>
   </div>
 </div>
 
@@ -124,7 +124,7 @@
 <span class="text-muted">(33% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>47%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>314k average,
-              322k in the densest mm² of logic</td></tr>
+              322k in the mm² with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run2">public layout</a>, the same way for every
@@ -285,7 +285,7 @@
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">oai21_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">17,858</td><td class="text-muted">OR-AND-Invert compound gate (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">ao22_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">14,584</td><td class="text-muted">AND-OR compound gate (2x2 inputs) (2x drive)</td></tr>
+              <td class="text-end">14,584</td><td class="text-muted">AND-OR compound gate (2x2 inputs, 2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">aoi21_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">13,437</td><td class="text-muted">AND-OR-Invert compound gate (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nand3_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
@@ -295,7 +295,7 @@
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">xor2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">10,008</td><td class="text-muted">2-input XOR gate (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">9,378</td><td class="text-muted">D flip-flop (1 bit storage) (2x drive)</td></tr>
+              <td class="text-end">9,378</td><td class="text-muted">D flip-flop (1 bit storage, 2x drive)</td></tr>
           </tbody>
         </table>
         </div>
@@ -390,11 +390,13 @@
                 style="font-size: 0.220px">16k</text>
           <text x="3.466" y="0.620" class=""
                 style="font-size: 0.220px">7k</text>
+          <text x="2.600" y="0.855" class="window-label"
+                style="font-size: 0.220px">25k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
-          1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
         <h3 id="sram" class="mt-30 mb-10">SRAM macros<a class="run-anchor" href="#sram" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
         <p class="small text-muted mb-10">The ready-made memory blocks this design uses.</p>
@@ -548,6 +550,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>

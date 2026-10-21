@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,7 +85,7 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">wafer.space Run 2</a></p>
     <h1 class="page-title">KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2</h1>
-    <p class="lead"><span class="run-code-inline">KIAN</span> · RISC-V and CPUs · 1 × 1 slot</p>
+    <p class="lead"><span class="run-code-inline">KIAN</span> · RISC-V and CPUs · <span class="run-nowrap">1 × 1 slot</span></p>
   </div>
 </div>
 
@@ -124,7 +124,7 @@
 <span class="text-muted">(19% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>16%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>182k average,
-              245k in the densest mm² of logic</td></tr>
+              245k in the mm² with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run2">public layout</a>, the same way for every
@@ -288,21 +288,21 @@ The licence and template were read from the repository at commit
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dlybuff_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">20,354</td><td class="text-muted">Delay buffer (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">10,286</td><td class="text-muted">D flip-flop (1 bit storage) (2x drive)</td></tr>
+              <td class="text-end">10,286</td><td class="text-muted">D flip-flop (1 bit storage, 2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">7,313</td><td class="text-muted">Buffer (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">ao22_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">6,377</td><td class="text-muted">AND-OR compound gate (2x2 inputs) (2x drive)</td></tr>
+              <td class="text-end">6,377</td><td class="text-muted">AND-OR compound gate (2x2 inputs, 2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">and2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">5,146</td><td class="text-muted">2-input AND gate (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">mux2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">3,113</td><td class="text-muted">2-input multiplexer (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">ao31_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">2,572</td><td class="text-muted">AND-OR compound gate (3+1 inputs) (2x drive)</td></tr>
+              <td class="text-end">2,572</td><td class="text-muted">AND-OR compound gate (3+1 inputs, 2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">nor2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">2,311</td><td class="text-muted">2-input NOR gate (2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">ao211_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
-              <td class="text-end">2,046</td><td class="text-muted">AND-OR compound gate (2+1+1 inputs) (2x drive)</td></tr>
+              <td class="text-end">2,046</td><td class="text-muted">AND-OR compound gate (2+1+1 inputs, 2x drive)</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">oai21_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">1,899</td><td class="text-muted">OR-AND-Invert compound gate (2x drive)</td></tr>
           </tbody>
@@ -401,11 +401,13 @@ The licence and template were read from the repository at commit
                 style="font-size: 0.220px">&lt;1k</text>
           <text x="3.466" y="0.620" class=""
                 style="font-size: 0.220px">&lt;1k</text>
+          <text x="2.400" y="2.055" class="window-label"
+                style="font-size: 0.220px">15k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
-          1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
         <h3 id="sram" class="mt-30 mb-10">SRAM macros<a class="run-anchor" href="#sram" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
         <p class="small text-muted mb-10">The ready-made memory blocks this design uses.</p>
@@ -457,7 +459,7 @@ The licence and template were read from the repository at commit
         <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp26a/tt_um_kianv_sv32_soc">KianV SV32 TT Linux SoC</a> <span class="text-muted">— 8 × 4 tiles</span></span>
       </li>
       <li class="run-history-tt">
-        <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></span>
+        <span class="run-timeline-date">Jun 2026 · <a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></span>
         <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/518.html">KianV uLinux SoC</a> <span class="text-muted">— 4 × 4 tiles</span></span>
       </li>
       <li class="run-history-ws">
@@ -610,6 +612,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>
