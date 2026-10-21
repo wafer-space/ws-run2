@@ -82,7 +82,7 @@ The following tables show the average logic standard cell density for each desig
 |---|---|---|---|---|---|---|---|
 | [NAX1](https://wafer.space/ws-run2/projects/NAX1.html) | [AS 7t-3.3V](https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3) | 10k | 13% | 27% | 50k | 12 | [Naxos CoB](https://github.com/ZeduloTech/Naxos) |
 | [SCTP](https://wafer.space/ws-run2/projects/SCTP.html) | [AS 7t-3.3V](https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3) | 10k | 13% | 26% | 125k | 17 | [SlugTPU](https://github.com/SlugTPU/gf180mcu-slugtpu) |
-| [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) | mixed | 9k | 12% | 27% | 119k | 1 | [Tiny Tapeout GF 0p3](https://github.com/TinyTapeout/tinytapeout-gf-0p3) |
+| [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) | mixed | 9k | 12% | 27% | 119k | 1 | [Tiny Tapeout GF 0.3](https://github.com/TinyTapeout/tinytapeout-gf-0p3) |
 | [SCML](https://wafer.space/ws-run2/projects/SCML.html) | [AS 7t-3.3V](https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3) | 9k | 11% | 25% | 111k | 38 | [ML-Audio SC](https://github.com/kjconway5/ML-Audio) |
 | [TQVC](https://wafer.space/ws-run2/projects/TQVC.html) | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html) | 7k | 9% | 16% | 36k | 1 | [TinyQV - Crowdsourced RISC-V SoC (1x0.5)](https://github.com/MichaelBell/ws01-tinyQV) |
 | [GD04](https://wafer.space/ws-run2/projects/GD04.html) | [9t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html) | 7k | 12% | 28% | 36k | 6 | [Racquet Wide 1x0.5](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) |
@@ -205,7 +205,7 @@ SRAM (Static Random-Access Memory) blocks are pre-designed memory macros. Unlike
 | [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) | 4 | 14,848 | 0.37 mm² (7% of core) | 123 | [3.3V SRAM test 2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) |
 | [AS16](https://wafer.space/ws-run2/projects/AS16.html) | 2 | 8,192 | 0.42 mm² (8% of core) | 6k | [CPU](https://github.com/SUD0NET/as16) |
 | [T26A](https://wafer.space/ws-run2/projects/T26A.html) | 2 | 2,048 | 0.23 mm² (2% of core) | 144k | [Tiny Tapeout GF 26a](https://github.com/TinyTapeout/tinytapeout-gf-26a) |
-| [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) | 1 | 2,048 | 0.07 mm² (1% of core) | 119k | [Tiny Tapeout GF 0p3](https://github.com/TinyTapeout/tinytapeout-gf-0p3) |
+| [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) | 1 | 2,048 | 0.07 mm² (1% of core) | 119k | [Tiny Tapeout GF 0.3](https://github.com/TinyTapeout/tinytapeout-gf-0p3) |
 | [TQVA](https://wafer.space/ws-run2/projects/TQVA.html) | 1 | 4,096 | 0.21 mm² (12% of core) | 36k | [TinyQV - Crowdsourced RISC-V SoC](https://github.com/MichaelBell/ws01-tinyQV) |
 | [TQVC](https://wafer.space/ws-run2/projects/TQVC.html) | 1 | 4,096 | 0.21 mm² (4% of core) | 36k | [TinyQV - Crowdsourced RISC-V SoC (1x0.5)](https://github.com/MichaelBell/ws01-tinyQV) |
 | [FS02](https://wafer.space/ws-run2/projects/FS02.html) | custom | — | 0.35 mm² (8% of core) | 3k | [Test chip with 3.3V SRAM blocks using SRAM design rules](https://gitlab.com/Chips4Makers/arrakeen-sram-testchip) |
@@ -289,7 +289,7 @@ Which transistor voltages and optional devices of the GF180MCU process the 40 de
 | [MIM capacitors](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_4_2.html) | 7 of 40 | [0000](https://wafer.space/ws-run2/projects/0000.html), [AS04](https://wafer.space/ws-run2/projects/AS04.html), [CAB1](https://wafer.space/ws-run2/projects/CAB1.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [NAX1](https://wafer.space/ws-run2/projects/NAX1.html), [OCD3](https://wafer.space/ws-run2/projects/OCD3.html), [RLCM](https://wafer.space/ws-run2/projects/RLCM.html) |
 | [Unsalicided poly resistors](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_01.html) | 6 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html), [CAB1](https://wafer.space/ws-run2/projects/CAB1.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [MEME](https://wafer.space/ws-run2/projects/MEME.html), [NAX1](https://wafer.space/ws-run2/projects/NAX1.html), [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) |
 | [MOS capacitors](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_6.html) | 3 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) |
-| [Diodes (DIODE_MK)](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_3.html) | 3 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) |
+| [Diodes](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_3.html) | 3 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) |
 | [Deep N-well](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_07_03.html) | 3 of 40 | [0000](https://wafer.space/ws-run2/projects/0000.html), [ISHI](https://wafer.space/ws-run2/projects/ISHI.html), [T0P3](https://wafer.space/ws-run2/projects/T0P3.html) |
 | [Salicided poly resistors](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_4.html) | 1 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html) |
 | [Diffusion resistors](https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_4.html) | 1 of 40 | [AS04](https://wafer.space/ws-run2/projects/AS04.html) |
@@ -309,7 +309,7 @@ Which transistor voltages and optional devices of the GF180MCU process the 40 de
 |---|---|---|---|---|
 | [0000](https://wafer.space/ws-run2/projects/0000.html) | 3.3 V, 5 V, 6 V | 24 / 16 / 96 | MIM capacitors (Metal4-Metal5), Deep N-well, Schottky diodes | fd_io |
 | [AMM1](https://wafer.space/ws-run2/projects/AMM1.html) | 5 V | 0 / 0 / 0 | — | fd_io |
-| [AS04](https://wafer.space/ws-run2/projects/AS04.html) | 3.3 V | 192 / 0 / 0 | MIM capacitors (Metal4-Metal5), MOS capacitors (only in apad), High-resistance poly resistors, Unsalicided poly resistors, Salicided poly resistors, Diffusion resistors, Diodes (DIODE_MK) (only in apad) | ocd_io |
+| [AS04](https://wafer.space/ws-run2/projects/AS04.html) | 3.3 V | 192 / 0 / 0 | MIM capacitors (Metal4-Metal5), MOS capacitors (only in apad), High-resistance poly resistors, Unsalicided poly resistors, Salicided poly resistors, Diffusion resistors, Diodes (only in apad) | ocd_io |
 | [AS16](https://wafer.space/ws-run2/projects/AS16.html) | 5 V | 0 / 0 / 0 | — | fd_io |
 | [BTX1](https://wafer.space/ws-run2/projects/BTX1.html) | 3.3 V | 0 / 0 / 0 | — | fd_io |
 | [CAB1](https://wafer.space/ws-run2/projects/CAB1.html) | 3.3 V, 5 V, 6 V | 40 / 104 / 44 | MIM capacitors (Metal4-Metal5; only in simple_por), High-resistance poly resistors (only in simple_por), Unsalicided poly resistors | fd_io |
@@ -325,12 +325,12 @@ Which transistor voltages and optional devices of the GF180MCU process the 40 de
 | [FS03](https://wafer.space/ws-run2/projects/FS03.html) | 5 V | 0 / 323,352 / 0 | — | fd_io |
 | [GD04](https://wafer.space/ws-run2/projects/GD04.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [HZ80](https://wafer.space/ws-run2/projects/HZ80.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [ISHI](https://wafer.space/ws-run2/projects/ISHI.html) | 3.3 V, 5 V, 6 V | 9,268 / 4,589 / 90 | MIM capacitors (Metal4-Metal5), MOS capacitors (only in fill10_supplyVDD), High-resistance poly resistors, Unsalicided poly resistors, Diodes (DIODE_MK), Deep N-well | fd_io |
+| [ISHI](https://wafer.space/ws-run2/projects/ISHI.html) | 3.3 V, 5 V, 6 V | 9,268 / 4,589 / 90 | MIM capacitors (Metal4-Metal5), MOS capacitors (only in fill10_supplyVDD), High-resistance poly resistors, Unsalicided poly resistors, Diodes, Deep N-well | fd_io |
 | [KIAN](https://wafer.space/ws-run2/projects/KIAN.html) | 3.3 V | 0 / 0 / 0 | — | ocd_io |
 | [MEME](https://wafer.space/ws-run2/projects/MEME.html) | 5 V | 0 / 0 / 0 | Unsalicided poly resistors | fd_io |
 | [MOLE](https://wafer.space/ws-run2/projects/MOLE.html) | 3.3 V | 0 / 0 / 0 | — | ocd_io |
 | [NAX1](https://wafer.space/ws-run2/projects/NAX1.html) | 3.3 V, 5 V, 6 V | 2 / 0 / 44 | MIM capacitors (Metal4-Metal5; only in simple_por), High-resistance poly resistors (only in simple_por), Unsalicided poly resistors | fd_io |
-| [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) | 3.3 V | 177 / 0 / 0 | MIM capacitors (Metal4-Metal5), High-resistance poly resistors, Diodes (DIODE_MK) | ocd_io |
+| [OCD3](https://wafer.space/ws-run2/projects/OCD3.html) | 3.3 V | 177 / 0 / 0 | MIM capacitors (Metal4-Metal5), High-resistance poly resistors, Diodes | ocd_io |
 | [PSOC](https://wafer.space/ws-run2/projects/PSOC.html) | 5 V | 0 / 0 / 0 | — | fd_io |
 | [QZ80](https://wafer.space/ws-run2/projects/QZ80.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [RLCM](https://wafer.space/ws-run2/projects/RLCM.html) | — | 0 / 0 / 0 | MIM capacitors (Metal4-Metal5) | — |
